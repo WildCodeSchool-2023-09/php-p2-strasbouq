@@ -1,5 +1,21 @@
 {% extends 'layout.html.twig' %}
+{% block title %}
+    {{ parent() }} - Accueil
+{% endblock %}
 
 {% block content %}
-
+<header></header>
+<main class='uk-container'>
+    <h2 class='uk-align-center'>Promotions / Nouveautés</h2>
+    <section>
+        {% include '/integers/carrousel-grid.html.twig' %}
+    </section>
+    <section>
+        <div class='img-bouquet-sur-mesure'>
+            <div class='blur uk-animation-toggle '>
+                <h1><a href="#" class='uk-animation-scale-up'>Votre bouquet sur mesure</a></h1>
+            </div>
+        </div>
+    </section>
+</main>
 {% endblock %}

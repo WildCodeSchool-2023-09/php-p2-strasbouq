@@ -1,0 +1,39 @@
+header {
+    background: url(../images/bouquet-fleurs-fond.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 15rem;
+}
+
+h2 {
+    font-family: var(--font-family-primary);
+    text-align: center;
+    font-size: 5rem;
+    padding: 3rem 2rem;
+    color: var(--primary);
+    
+}
+
+.img-bouquet-sur-mesure {
+    background: url(../images/fond-bouquet-sur-mesure.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 0;
+    border-radius: 20px;
+}
+
+.img-bouquet-sur-mesure h1 a{
+    font-family: var(--font-family-primary);
+    color: white;
+    font-size: 5rem;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+}
+
+.blur {
+    background-color: rgba(217, 217, 217, 0.2) ;
+    backdrop-filter: blur(5px);
+    padding: 3rem;
+    border-radius: 20px;
+}
