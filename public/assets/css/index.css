@@ -20,7 +20,7 @@ h2 {
     background-size: cover;
     padding: 0;
     border-radius: 20px;
-    margin-top: 15rem;
+    margin-top: 9rem;
 }
 
 
@@ -40,6 +40,3 @@ h2 {
     border-radius: 20px;
 }
 
-@media screen and (width < 800px) {
-    
-}
