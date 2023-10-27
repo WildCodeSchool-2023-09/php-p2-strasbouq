@@ -12,6 +12,7 @@
 	margin: 0;
 	padding: .5rem;
 	opacity: 100%;
+	transition: 0.1s;
 }
 
 .uk-text-align {

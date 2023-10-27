@@ -19,5 +19,20 @@
     height: 18rem;
     width: 25rem;
     padding: 1rem;
-    border-radius: 10px;
+}
+
+@media screen and (width < 1050px){
+    .pres-index-box {
+        flex-direction: column;
+    }
+
+    .presentation-paragraphe {
+        font-size: 1rem;
+    }
+
+    .presentation-image img {
+        height: 18rem;
+        width: 15rem;
+        padding: 1rem;
+    }
 }
