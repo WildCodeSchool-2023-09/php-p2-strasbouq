@@ -1,0 +1,28 @@
+{% extends "layout.html.twig" %}
+
+{% block title %}
+	{{ parent() }}
+	- Login
+{% endblock %}
+
+{% block content %}
+	<div class="formulaire">
+		<div class="uk-margin">
+			<div class="uk-form-controls">
+				<input class="uk-input" id="form-horizontal-text" type="text" placeholder="Identifiant">
+			</div>
+			<div class="uk-form-controls">
+				<input class="uk-input" id="form-horizontal-text" type="text" placeholder="Email">
+			</div>
+			<div class="uk-form-controls">
+				<input class="uk-input" id="form-horizontal-text" type="text" placeholder="Mot de passe">
+			</div>
+			<div class="button1">
+				<button class="uk-button uk-button-default uk-button-small">Mot de passe oublié</button>
+			</div>
+			<div class="button2">
+				<button class="uk-button uk-button-default">Submit</button>
+			</div>
+		</div>
+	</div>
+</div>{% endblock %}

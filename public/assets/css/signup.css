@@ -1,0 +1,61 @@
+.uk-margin {
+    margin-top: 30px;
+    width: 70%;
+}
+
+.formulaire {
+    display: flex;
+    justify-content: center;
+    background-color: #132028;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-family: 'imperial script';
+    font-size: 35px;
+    border-radius: 20px;
+}
+
+.uk-input {
+    background-color: #132028;
+}
+
+input[type="text"],
+input[type="password"],
+textarea {
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #ccc;
+}
+
+.uk-button uk-button-default {
+    display: flex;
+    justify-content: center;
+}
+
+.button3 {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.uk-button-default {
+    color: white;
+    font-size: 35px;
+    text-transform: none;
+    border-radius: 50px;
+}
+
+.uk-form-controls {
+    padding-top: 15px;
+}
+
+.uk-input {
+    border-radius: 25px;
+}
+
+.uk-input::placeholder {
+    color: #132028;
+}
+
+.uk-input:focus::placeholder {
+    color: #132028;
+}

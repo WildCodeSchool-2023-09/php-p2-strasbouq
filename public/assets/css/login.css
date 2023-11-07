@@ -1,0 +1,11 @@
+.button1 {
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+}
+
+.button2 {
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+}

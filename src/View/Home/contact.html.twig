@@ -1,0 +1,41 @@
+{% extends "layout.html.twig" %}
+
+{% block title %}
+	{{ parent() }}
+	- contact
+{% endblock %}
+
+{% block content %}
+	<div class="contact">
+		Contact</div>
+	<div class="principale">
+		<div class="horaires">
+			<h1>Horaires</h1>
+
+			<p>Lundi: 9h/12h30 - 14h/17h
+				<br>
+				Mardi: Fermé
+				<br>
+				Mercredi: 9h/12h30 - 14h/17h
+				<br>
+				Jeudi: 9h/12h30 - 14h/18h30
+				<br>
+				Vendredi: 9h/12h30 - 14h/18h30
+				<br>
+				Samedi: 9h/12h30 - 14h/18h30
+				<br>
+				Dimanche: Fermé
+			</p>
+			<p>
+				Telephone: 07-56-24-86-21</p>
+		</div>
+		<div class="blackline"></div>
+		<form>
+			<h2>Nous contacter</h2>
+			<input class="uk-input" type="text" placeholder="Nom">
+			<input class="uk-input" type="text" placeholder="Email">
+			<input class="uk-input" type="text" placeholder="Texte">
+		</form>
+
+	</div>
+{% endblock %}

@@ -1,0 +1,79 @@
+.contact {
+    background-color: #132028;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 170px;
+    margin-bottom: 50px;
+    font-size: 75px;
+    color: white;
+    font-family: 'imperial script';
+}
+
+.blackline {
+    width: 3px;
+    height: 20%;
+    position: absolute;
+    background-color: #132028;
+    margin: 0;
+    padding: 0;
+
+}
+
+.principale {
+    display: flex;
+    justify-content: space-around;
+}
+
+.horaires {
+    color: #132028;
+}
+
+.uk-input {
+    background-color: white;
+    margin-bottom: 10px;
+}
+
+.uk-input:focus::placeholder {
+    color: #132028;
+}
+
+form {
+    width: 25%;
+}
+
+/* Responsive */
+@media screen and (max-width: 1050px) {
+    .principale {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .blackline {
+        transform: rotate(90deg);
+        display: flex;
+        justify-content: center;
+        margin-top: 150px;
+
+    }
+
+    form {
+        margin-top: 200px;
+        font-size: larger;
+    }
+
+    .horaires {
+        display: flex;
+        flex-direction: column;
+        font-size: larger;
+        align-items: center;
+    }
+
+    .horaires p {
+        display: flex;
+        text-align: center;
+    }
+
+
+}

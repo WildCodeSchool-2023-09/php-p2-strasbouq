@@ -1,0 +1,31 @@
+{% extends "layout.html.twig" %}
+
+{% block title %}
+	{{ parent() }}
+	- Sign-up
+{% endblock %}
+
+{% block content %}
+	<div class="formulaire">
+		<div class="uk-margin">
+			<div class="uk-form-controls">
+				<input class="uk-input" id="form-horizontal-text" type="text" placeholder="Identifiant">
+			</div>
+			<div class="uk-form-controls">
+				<input class="uk-input" id="form-horizontal-text" type="text" placeholder="Nom">
+			</div>
+			<div class="uk-form-controls">
+				<input class="uk-input" id="form-horizontal-text" type="text" placeholder="Prenom">
+			</div>
+			<div class="uk-form-controls">
+				<input class="uk-input" id="form-horizontal-text" type="text" placeholder="Email">
+			</div>
+			<div class="uk-form-controls">
+				<input class="uk-input" id="form-horizontal-text" type="text" placeholder="Mot de passe">
+			</div>
+			<div class="button3">
+				<button class="uk-button uk-button-default">Create Account</button>
+			</div>
+		</div>
+	</div>
+{% endblock %}
