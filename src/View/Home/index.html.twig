@@ -1,5 +1,24 @@
 {% extends 'layout.html.twig' %}
+{% block title %}
+    {{ parent() }} - Accueil
+{% endblock %}
 
 {% block content %}
-
+<header class='top-index'></header>
+<main class='uk-container'>
+    <h2 class='h2-index uk-align-center'>Promotions / Nouveautés</h2>
+    <section>
+        {% include '/integers/carrousel-grid.html.twig' %}
+    </section>
+    <section>
+        <div class='img-bouquet-sur-mesure'>
+            <div class='blur-index uk-animation-toggle '>
+                <h1 class='h1-index'><a href="#" class='uk-animation-scale-up'>Votre bouquet sur mesure</a></h1>
+            </div>
+        </div>
+    </section>
+    <section>
+        {% include "/integers/presentation-index.html.twig" %}
+    </section>
+</main>
 {% endblock %}
