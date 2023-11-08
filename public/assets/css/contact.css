@@ -15,29 +15,46 @@
     background-color: #132028;
     margin: 0;
     padding: 0;
-
 }
 
 .principale {
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
 .horaires {
     color: #132028;
+    align-self: center;
+    margin: auto;
 }
 
-/*
-.uk-input {
+
+.contact-input {
     margin-bottom: 10px;
+    border-radius: 20px;
 }
 
-.uk-input:focus::placeholder {
+
+.contact-input:focus::placeholder {
     color: #132028;
 }
 
-.form {
+
+.input-form {
     width: 25%;
+    margin: auto;
+    font-family: 'imperial script';
+    font-size: 35px;
+    border-radius: 20px;
+}
+
+input[type="text"],
+input[type="password"],
+textarea {
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #ccc;
 }
 
 /* Responsive */
@@ -53,11 +70,12 @@
         display: flex;
         justify-content: center;
         margin-top: 150px;
+        height: 50uh;
 
     }
 
-    /*
-    .contactform {
+    .input-form {
+        width: 60%;
         margin-top: 200px;
         font-size: larger;
     }
@@ -74,5 +92,7 @@
         text-align: center;
     }
 
-*/
+    h2 {
+        text-align: center;
+    }
 }
