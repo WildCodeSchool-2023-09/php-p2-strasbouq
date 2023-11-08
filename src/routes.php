@@ -16,4 +16,5 @@ return [
     'signup' => ['UserController', 'signup',],
     'login' => ['LoginController', 'login'],
     'contact' => ['ContactController', 'contact'],
+    'personal_bouquet' => ['PersonalBouquetController', 'personalBouquet',],
 ];
