@@ -1,61 +1,59 @@
-/* .uk-margin {
-    margin-top: 30px;
-    width: 70%;
+.sign-header {
+    padding: 8rem;
+    background-color: var(--primary);
 }
 
-.formulaire {
-    display: flex;
-    justify-content: center;
-    background-color: #132028;
-    margin-left: 10%;
-    margin-right: 10%;
-    font-family: 'imperial script';
-    font-size: 35px;
+.formulaire-sign {
+    background-color: var(--primary);
+    margin:4rem 20%;
+    padding: 2rem;
     border-radius: 20px;
 }
 
-.uk-input {
-    background-color: #132028;
-}
-
-input[type="text"],
-input[type="password"],
-textarea {
-    border: none;
-    outline: none;
-    border-bottom: 2px solid #ccc;
-}
-
-.uk-button uk-button-default {
-    display: flex;
-    justify-content: center;
-}
-
-.button3 {
-    display: flex;
-    justify-content: center;
-    padding-top: 20px;
-}
-
-.uk-button-default {
+.input-sign {
+    background-color: var(--primary);
     color: white;
-    font-size: 35px;
+    border-radius: 20px;
+    font-family: var(--font-family-primary);
+    font-size: 2rem;
+    margin-top: 1.7rem;
+    border: 0px;
+    border-bottom: 2px solid;
+}
+
+.button-sign {
+    display: flex;
+    justify-content: center;
+    padding-top: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+.input-sign:hover {
+    color: var(--primary);
+    background-color: white;
+}
+
+.button-creat-account {
+    border-radius: 15px;
+    padding: 0.5rem;
+    font-family: var(--font-family-primary);
+    color: white;
+    font-size: 1.8rem;
     text-transform: none;
-    border-radius: 50px;
 }
 
-.uk-form-controls {
-    padding-top: 15px;
+.button-creat-account:hover {
+    color: var(--primary);
+    background-color: white;
+    transition: 0.5s;
 }
 
-.uk-input {
-    border-radius: 25px;
-}
+@media screen and (width < 750px) {
+    .input-sign {
+        font-size: 1.5rem;
+    }
 
-.uk-input::placeholder {
-    color: #132028;
+    .button-creat-account{
+        font-size: 1.4rem;
+    }
 }
-
-.uk-input:focus::placeholder {
-    color: #132028;
-} */

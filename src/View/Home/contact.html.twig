@@ -6,6 +6,7 @@
 {% endblock %}
 
 {% block content %}
+	<header class='contact-header'></header>
 	<div class="contact">
 		Contact</div>
 	<div class="principale">
@@ -30,11 +31,14 @@
 				Telephone: 07-56-24-86-21</p>
 		</div>
 		<div class="blackline"></div>
-		<form class="input-form">
+		<form class="input-form" method='post'>
 			<h2>Nous contacter</h2>
-			<input class="contact-input uk-input" type="text" placeholder="Nom">
-			<input class="contact-input uk-input" type="text" placeholder="Email">
-			<input class="contact-input uk-input" type="text" placeholder="Texte">
+			<input class="contact-input uk-input" type="text" placeholder="Nom" name='name'>
+			<input class="contact-input uk-input" type="text" placeholder="Email" name='email'>
+			<input class="contact-input uk-input" type="text" placeholder="Texte" name='text'>
+			<div class="button-log">
+				<button class="contact-button uk-button uk-button-default">Submit</button>
+			</div>
 		</form>
 
 	</div>

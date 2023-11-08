@@ -1,4 +1,10 @@
+.contact-header {
+    padding: 6rem;
+    background-color: var(--primary);
+}
+
 .contact {
+    padding: 1%;
     background-color: #132028;
     display: flex;
     justify-content: center;
@@ -6,6 +12,7 @@
     margin-bottom: 50px;
     color: white;
     font-family: 'imperial script';
+    font-size: 80px;
 }
 
 .blackline {
@@ -56,6 +63,14 @@ textarea {
     outline: none;
     border-bottom: 2px solid #ccc;
 }
+
+.contact-button {
+    border-radius: 20px;
+    font-family: var(--font-family-primary);
+    font-size: 2rem;
+    text-transform: none;
+}
+
 
 /* Responsive */
 @media screen and (max-width: 1050px) {

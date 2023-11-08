@@ -6,25 +6,26 @@
 {% endblock %}
 
 {% block content %}
-	<div class="formulaire">
+	<header class='sign-header'></header>
+	<div class="formulaire-sign">
 		<div class="uk-margin">
+			<form class="form-sign uk-form-controls" method='post'>
+				<input class="input-sign uk-input" id="form-horizontal-text" type="text" placeholder="Identifiant" name='userId'>
+			</form>
 			<div class="uk-form-controls">
-				<input class="uk-input" id="form-horizontal-text" type="text" placeholder="Identifiant">
+				<input class="input-sign uk-input" id="form-horizontal-text" type="text" placeholder="Nom" name='lastname'>
 			</div>
 			<div class="uk-form-controls">
-				<input class="uk-input" id="form-horizontal-text" type="text" placeholder="Nom">
+				<input class="input-sign uk-input" id="form-horizontal-text" type="text" placeholder="Prenom" name='firstname'>
 			</div>
 			<div class="uk-form-controls">
-				<input class="uk-input" id="form-horizontal-text" type="text" placeholder="Prenom">
+				<input class="input-sign uk-input" id="form-horizontal-text" type="text" placeholder="Email" name='email'>
 			</div>
 			<div class="uk-form-controls">
-				<input class="uk-input" id="form-horizontal-text" type="text" placeholder="Email">
+				<input class="input-sign uk-input" id="form-horizontal-text" type="text" placeholder="Mot de passe" name='password'>
 			</div>
-			<div class="uk-form-controls">
-				<input class="uk-input" id="form-horizontal-text" type="text" placeholder="Mot de passe">
-			</div>
-			<div class="button3">
-				<button class="uk-button uk-button-default">Create Account</button>
+			<div class="button-sign">
+				<button class="button-creat-account uk-button uk-button-default">Create Account</button>
 			</div>
 		</div>
 	</div>
