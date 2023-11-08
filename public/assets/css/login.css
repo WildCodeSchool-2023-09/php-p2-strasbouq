@@ -1,3 +1,7 @@
+.formulaire-log {
+    background-color: var(--primary);
+}
+
 .button1 {
     display: flex;
     justify-content: center;
@@ -8,4 +12,20 @@
     display: flex;
     justify-content: center;
     padding-top: 15px;
+}
+
+.button1-mdp:hover {
+    color: var(--primary);
+    background-color: white;
+    transition: 0.5s;
+}
+
+.button2-sub:hover {
+    color: var(--primary);
+    background-color: white;
+    transition: 0.5s;
+}
+
+.button1-mdp {
+    padding: 0.5rem;
 }

@@ -3,16 +3,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 170px;
     margin-bottom: 50px;
-    font-size: 75px;
     color: white;
     font-family: 'imperial script';
 }
 
 .blackline {
     width: 3px;
-    height: 20%;
+    height: 50%;
     position: absolute;
     background-color: #132028;
     margin: 0;
@@ -29,8 +27,8 @@
     color: #132028;
 }
 
+/*
 .uk-input {
-    background-color: white;
     margin-bottom: 10px;
 }
 
@@ -38,7 +36,7 @@
     color: #132028;
 }
 
-form {
+.form {
     width: 25%;
 }
 
@@ -58,7 +56,8 @@ form {
 
     }
 
-    form {
+    /*
+    .contactform {
         margin-top: 200px;
         font-size: larger;
     }
@@ -75,5 +74,5 @@ form {
         text-align: center;
     }
 
-
+*/
 }
