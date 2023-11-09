@@ -7,7 +7,7 @@ use PDO;
 
 class UserManager extends AbstractManager
 {
-    public const TABLE = 'sign';
+    public const TABLE = 'customer';
 
     public function insert(array $signForm)
     {
