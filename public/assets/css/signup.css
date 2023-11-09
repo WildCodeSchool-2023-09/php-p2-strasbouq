@@ -1,0 +1,59 @@
+.sign-header {
+    padding: 8rem;
+    background-color: var(--primary);
+}
+
+.formulaire-sign {
+    background-color: var(--primary);
+    margin:4rem 20%;
+    padding: 2rem;
+    border-radius: 20px;
+}
+
+.input-sign {
+    background-color: var(--primary);
+    color: white;
+    border-radius: 20px;
+    font-family: var(--font-family-primary);
+    font-size: 2rem;
+    margin-top: 1.7rem;
+    border: 0px;
+    border-bottom: 2px solid;
+}
+
+.button-sign {
+    display: flex;
+    justify-content: center;
+    padding-top: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+.input-sign:hover {
+    color: var(--primary);
+    background-color: white;
+}
+
+.button-creat-account {
+    border-radius: 15px;
+    padding: 0.5rem;
+    font-family: var(--font-family-primary);
+    color: white;
+    font-size: 1.8rem;
+    text-transform: none;
+}
+
+.button-creat-account:hover {
+    color: var(--primary);
+    background-color: white;
+    transition: 0.5s;
+}
+
+@media screen and (width < 750px) {
+    .input-sign {
+        font-size: 1.5rem;
+    }
+
+    .button-creat-account{
+        font-size: 1.4rem;
+    }
+}
