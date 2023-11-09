@@ -27,7 +27,7 @@ class ContactController extends AbstractController
             }
         }
 
-        return $this->twig->render('Home/login.html.twig', ['errors' => $errors]);
+        return $this->twig->render('Home/contact.html.twig', ['errors' => $errors]);
     }
 
     public function validate(array $formContact): array
