@@ -26,7 +26,7 @@ SET time_zone = "+00:00";
 -- Structure de la table `item`
 --
 
-CREATE TABLE `item` (
+CREATE TABLE IF NOT EXISTS `item` (
   `id` int(11) UNSIGNED NOT NULL,
   `title` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
@@ -43,6 +43,12 @@ INSERT INTO `item` (`id`, `title`) VALUES
 -- Index pour les tables exportées
 --
 
+CREATE TABLE IF NOT EXISTS `contact`(
+  `id` int PRIMARY KEY AUTO_INCREMENT NOT NULL,
+  `name` varchar(50) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `text` VARCHAR(200) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 --
 -- Index pour la table `item`
 --
@@ -61,3 +67,12 @@ ALTER TABLE `item`
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
+CREATE TABLE IF NOT EXISTS `sign`(
+  `id` int PRIMARY KEY AUTO_INCREMENT NOT NULL,
+  `userID` VARCHAR(40) NOT NULL,
+  `lastname` varchar(200) NOT NULL,
+  `firstname` VARCHAR(200) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `password` VARCHAR(200) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
