@@ -1,0 +1,201 @@
+.personal_bouquet_main {
+  margin: 0rem 5rem;
+}
+
+.personal_bouquet_hedaer {
+  background: url(../images/fond-bouquet-sur-mesure.jpg);
+  padding: 12rem;
+  background-position: center;
+  background-size: cover;
+}
+
+.personal_bouquet_nav_choice {
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;    
+}
+
+.personal_bouquet_liste a {
+  font-family: var(--font-family-secondary);
+  font-size:1.5rem;
+}
+
+.flex-choix {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 4rem; 
+  font-size: 3rem;
+  list-style: none;
+  font-family: var(--font-family-primary);
+  color: var(--primary);
+  text-align: center;
+}
+
+.personal_bouquet_input[type="checkbox"][id^="myCheckbox"] {
+  display: none;
+}
+
+.personal_bouquet_label {
+  border: 3px solid var(--primary);
+  padding: 0.5rem 1rem 0.5rem 0.5rem;
+  display: block;
+  position: relative;
+  cursor:pointer;
+  border-radius: 10px;
+} 
+
+:checked + label {
+  background: var(--primary);
+  color: white;
+}
+
+.personal_bouquet_img_choix_rond {
+  background: url(../images/bouquet_rond.jpg);
+  padding: 7rem;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  border: 10px solid var(--primary);
+}
+
+.personal_bouquet_img_choix_champetre {
+  background: url(../images/bouquet_champetre.jpg);
+  padding: 7rem;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  border: 10px solid var(--primary);
+}
+
+.personal_bouquet_choix_rouge {
+  background: red;
+  padding: 5rem;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  border: 10px solid var(--primary);
+}
+
+.personal_bouquet_choix_blanc {
+  background: white;
+  padding: 5rem;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  border: 10px solid var(--primary);
+}
+
+.personal_bouquet_choix_jaune {
+  background: yellow;
+  padding: 5rem;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  border: 10px solid var(--primary);
+}
+
+.personal_bouquet_choix_rose {
+  background: pink;
+  padding: 5rem;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  border: 10px solid var(--primary);
+}
+
+.personal_bouquet_choix_violet {
+  background: purple;
+  padding: 5rem;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  border: 10px solid var(--primary);
+}
+
+.personal_bouquet_choix_orange {
+  background: rgb(255, 136, 0);
+  padding: 5rem;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  border: 10px solid var(--primary);
+}
+
+.personal_bouquet_img_choix_rose {
+  background: url(../images/rose.jpg);
+  padding: 5rem;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  border: 10px solid var(--primary);
+}
+
+.personal_bouquet_img_choix_tulipe {
+  background: url(../images/tulipe.jpg);
+  padding: 5rem;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  border: 10px solid var(--primary);
+}
+
+.personal_bouquet_img_choix_dahlia {
+  background: url(../images/dahlia.jpg);
+  padding: 5rem;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  border: 10px solid var(--primary);
+}
+
+.personal_bouquet_img_choix_pivoine {
+  background: url(../images/pivoine.jpg);
+  padding: 5rem;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  border: 10px solid var(--primary);
+}
+
+.personal_bouquet_img_choix_cosmos {
+  background: url(../images/cosmos.jpg);
+  padding: 5rem;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  border: 10px solid var(--primary);
+}
+
+.personal_bouquet_img_choix_fougere {
+  background: url(../images/fougere.jpg);
+  padding: 7rem;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  border: 10px solid var(--primary);
+}
+
+.personal_bouquet_img_choix_eucalyptus {
+  background: url(../images/eucalyptus.jpg);
+  padding: 7rem;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  border: 10px solid var(--primary);
+}

@@ -13,5 +13,8 @@ return [
     'items/show' => ['ItemController', 'show', ['id']],
     'items/add' => ['ItemController', 'add',],
     'items/delete' => ['ItemController', 'delete',],
-    'sign' => ['UserController', 'addUser'],
+    'signup' => ['UserController', 'addUser',],
+    'login' => ['LoginController', 'login'],
+    'contact' => ['ContactController', 'addContact'],
+    'personal_bouquet' => ['PersonalBouquetController', 'personalBouquet',],
 ];

@@ -1,0 +1,38 @@
+.pres-index-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 3px var(--primary);
+    margin-top: 9rem;
+    border-radius: 10px;
+}
+
+.presentation-paragraphe {
+    text-align: center;
+    font-family: var(--font-family-secondary);
+    font-size: 1.2rem;
+    color: var(--primary);
+    margin: 0rem 2rem;
+    padding: 1rem;
+}
+.presentation-image img{
+    height: 18rem;
+    width: 25rem;
+    padding: 1rem;
+}
+
+@media screen and (width < 1050px){
+    .pres-index-box {
+        flex-direction: column;
+    }
+
+    .presentation-paragraphe {
+        font-size: 1rem;
+    }
+
+    .presentation-image img {
+        height: 18rem;
+        width: 15rem;
+        padding: 1rem;
+    }
+}
