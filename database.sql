@@ -48,6 +48,7 @@ SET time_zone = "+00:00";
 
 --
 
+
 CREATE TABLE
     `item` (
         `id` int(11) UNSIGNED NOT NULL,
@@ -170,6 +171,7 @@ SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
 
 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
 
+
 --
 
 -- Contenu de la table `item`
@@ -211,6 +213,7 @@ ALTER TABLE `item` ADD PRIMARY KEY (`id`);
 -- AUTO_INCREMENT pour la table `item`
 
 --
+
 
 ALTER TABLE
     `item` MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT,
