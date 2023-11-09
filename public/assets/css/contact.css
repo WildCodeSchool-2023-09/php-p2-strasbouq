@@ -9,17 +9,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 50px;
+    margin-bottom: 3.125rem;
     color: white;
-    font-family: 'imperial script';
-    font-size: 80px;
+    font-family: var(--font-family-primary);
+    font-size: 5rem;
 }
 
 .blackline {
-    width: 3px;
+    width: 0.2rem;
     height: 50%;
     position: absolute;
-    background-color: #132028;
+    background-color: var(--primary);
     margin: 0;
     padding: 0;
 }
@@ -51,8 +51,8 @@
 .input-form {
     width: 25%;
     margin: auto;
-    font-family: 'imperial script';
-    font-size: 35px;
+    font-family: var(--font-family-primary);
+    font-size: 2.2rem;
     border-radius: 20px;
 }
 
