@@ -45,8 +45,9 @@ SET time_zone = "+00:00";
 --
 
 -- Structure de la table `item`
-
 --
+
+USE projet_2;
 
 CREATE TABLE
     `item` (

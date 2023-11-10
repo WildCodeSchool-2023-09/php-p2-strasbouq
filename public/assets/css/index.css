@@ -42,6 +42,11 @@
     border-radius: 20px;
 }
 
+.uk-link, a {
+    text-decoration: none;
+    color: white;
+}
+
 @media screen and (width < 800px){
     .top-index {
         padding: 10rem; 
