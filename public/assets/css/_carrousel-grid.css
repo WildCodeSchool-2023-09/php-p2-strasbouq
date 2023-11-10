@@ -1,0 +1,25 @@
+.d-border {
+	border:7px solid  var(--primary);
+}
+
+.uk-text-align:hover {
+	font-family: var(--font-family-primary);
+	background-color: rgba(19,32,40,.5);
+	backdrop-filter: blur(10px);
+	color: var(--secondary);
+	font-size: 2rem;
+	border-radius: 10px 10px 0px 0px;
+	margin: 0;
+	padding: .5rem;
+	opacity: 100%;
+	transition: 0.1s;
+}
+
+.uk-text-align {
+	opacity: 0%;
+}
+
+.uk-grid {
+	display: flex;
+	justify-content: space-between;
+}
