@@ -8,12 +8,11 @@ nav {
     background-color: rgba(217, 217, 217, 0.3);
     backdrop-filter: blur(20px);
     position: absolute;
-    width: 99%;
+    width: 100%;
     z-index: 1;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
     font-size: calc(0.5rem + 1.5vw);
     height: 100px;
     border-bottom: 3px solid white;
