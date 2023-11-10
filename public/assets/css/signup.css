@@ -64,6 +64,7 @@
     font-family: var(--font-family-secondary);
     font-size: 1.1rem;
     margin-left: 1rem;
+    margin-top: .5rem;
 }
 
 @media screen and (width < 750px) {

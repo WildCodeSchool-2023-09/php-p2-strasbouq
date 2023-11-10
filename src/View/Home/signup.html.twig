@@ -12,9 +12,6 @@
 	<div class="formulaire-sign">
 		<div class="uk-margin">
 			<form class="form-sign uk-form-controls" method='post'>
-				<div class="uk-form-controls">
-					<input class="input-sign uk-input" id="form-horizontal-text" type="text" placeholder="Identifiant" name='userId'>
-				</div>
 				{% if errors.userId is defined %}
 					<div class='signErrors'>{{ errors.userId }}</div>
 				{% endif %}
@@ -23,19 +20,19 @@
 					<div class='signErrors'>{{ errors.userIdTooLong}}</div>
 				{% endif %}
 				<div class="uk-form-controls">
-					<input class="input-sign uk-input" id="form-horizontal-text" type="text" placeholder="Nom" name='lastname'>
+					<input class="input-sign uk-input" id="form-horizontal-text" type="text" placeholder="Identifiant" name='userId'>
 				</div>
 				{% if errors.lastname %}
 					<div class='signErrors'>{{ errors.lastname }}</div>
 				{% endif %}
 				<div class="uk-form-controls">
-					<input class="input-sign uk-input" id="form-horizontal-text" type="text" placeholder="Prenom" name='firstname'>
+					<input class="input-sign uk-input" id="form-horizontal-text" type="text" placeholder="Nom" name='lastname'>
 				</div>
 				{% if errors.firstname is defined %}
 					<div class='signErrors'>{{ errors.firstname }}</div>
 				{% endif %}
 				<div class="uk-form-controls">
-					<input class="input-sign uk-input" id="form-horizontal-text" type="text" placeholder="Email" name='email'>
+					<input class="input-sign uk-input" id="form-horizontal-text" type="text" placeholder="Prenom" name='firstname'>
 				</div>
 				{% if errors.email is defined %}
 					<div class='signErrors'>{{ errors.email }}</div>
@@ -45,7 +42,7 @@
 					<div class='signErrors'>{{ errors.emailFormat}}</div>
 				{% endif %}
 				<div class="uk-form-controls">
-					<input class="input-sign uk-input" id="form-horizontal-text" type="password" placeholder="Mot de passe" name='password'>
+					<input class="input-sign uk-input" id="form-horizontal-text" type="text" placeholder="Email" name='email'>
 				</div>
 				{% if errors.password %}
 					<div class='signErrors'>{{ errors.password }}</div>
@@ -58,6 +55,9 @@
 				{% if errors.notSecurePassword %}
 					<div class='signErrors'>{{ errors.notSecurePassword }}</div>
 				{% endif %}
+				<div class="uk-form-controls">
+					<input class="input-sign uk-input" id="form-horizontal-text" type="password" placeholder="Mot de passe" name='password'>
+				</div>
 				<div class="button-sign">
 					<button class="button-creat-account uk-button uk-button-default">Create Account</button>
 				</div>
