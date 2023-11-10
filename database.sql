@@ -48,6 +48,7 @@ SET time_zone = "+00:00";
 
 --
 
+
 CREATE TABLE
     `item` (
         `id` int(11) UNSIGNED NOT NULL,
@@ -170,6 +171,7 @@ SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
 
 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
 
+
 --
 
 -- Contenu de la table `item`
@@ -186,6 +188,12 @@ VALUES (1, 'Stuff'), (2, 'Doodads');
 
 --
 
+CREATE TABLE IF NOT EXISTS `contact`(
+  `id` int PRIMARY KEY AUTO_INCREMENT NOT NULL,
+  `name` varchar(50) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `text` VARCHAR(200) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 --
 
 -- Index pour la table `item`
@@ -205,6 +213,7 @@ ALTER TABLE `item` ADD PRIMARY KEY (`id`);
 -- AUTO_INCREMENT pour la table `item`
 
 --
+
 
 ALTER TABLE
     `item` MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT,
