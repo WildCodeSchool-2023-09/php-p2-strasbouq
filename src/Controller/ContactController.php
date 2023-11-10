@@ -36,15 +36,16 @@ class ContactController extends AbstractController
 
         $errors = [];
 
-        $errors[] = $verifyController->verifyCommun($formContact['name']);
-        $errors[] = $verifyController->verifyCommun($formContact['email']);
-        $errors[] = $verifyController->verifyCommun($formContact['text']);
-        $errors[] = $verifyController->verifyEmail($formContact['email']);
+        $errors['name'] = $verifyController->verifyCommun($formContact['name']);
+        $errors['email'] = $verifyController->verifyCommun($formContact['email']);
+        $errors['text'] = $verifyController->verifyCommun($formContact['text']);
+        $errors['emailFormat'] = $verifyController->verifyEmail($formContact['email']);
 
         //on verifie si le nombre decaracteres est en dessous de 200
         if (mb_strlen($formContact['text']) > 200) {
             $errors['textTooLong'] = 'Votre message est trop long';
         }
+        $errors = array_filter($errors);
         return $errors;
     }
 }
