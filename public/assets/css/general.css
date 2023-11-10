@@ -150,7 +150,8 @@ footer {
         padding: 3px 0;
     }
 
-    .hiddenText {
+     .hiddenText {
+        z-index: 30;
         background-color: rgba(217, 217, 217, 0.3);
         backdrop-filter: blur(10px);
         position: absolute;
