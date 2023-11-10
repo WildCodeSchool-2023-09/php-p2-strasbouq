@@ -10,7 +10,7 @@ nav {
     width: 100%;
     z-index: 1;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     font-size: calc(0.5rem + 1.5vw);
     height: 100px;
@@ -24,17 +24,26 @@ h3.titreNav {
 }
 
 nav .logo {
-    width: calc(7rem + 1.5vw);
-    height: calc(7rem + 1.5vw);
+    width: calc(4.5rem + 1.5vw);
+    height: calc(4.5rem + 1.5vw);
 }
 
 li {
     list-style: none;
 }
 
+.menuDroite ul li:last-child {
+    margin-right: 1rem;
+}
+
 .nav-a, .nav-a:visited {
     color: white;
     text-decoration: none;
+}
+
+a.nav-a:hover {
+    text-decoration: underline;
+    color: white;
 }
 
 nav ul {
@@ -64,8 +73,7 @@ footer {
     bottom: 0;
     background-color: var(--primary);
     border-top: 6px solid white;
-    backdrop-filter: blur(20);
-    margin-top: auto;
+    margin-top: 2rem;
     color: white;
     padding-bottom: 1rem;
 }
@@ -116,6 +124,7 @@ footer {
 
     .active ul {
         right: 0;
+        padding: 2rem;
     }
 
     #icons:before {
@@ -127,17 +136,29 @@ footer {
         position: fixed;
         z-index: 2;
         right: -100%;
-        top: 120px;
-        width: 30%;
+        top: 5rem;
+        width: 50%;
         flex-direction: column;
-        background-color: #d9d9d920;
         text-align: right;
         transition: 0.3s;
         justify-content: flex-end;
+        font-size: 1.7rem;
+        margin-bottom: 0.5rem;
     }
 
     nav li {
         padding: 3px 0;
+    }
+
+    .hiddenText {
+        background-color: rgba(217, 217, 217, 0.3);
+        backdrop-filter: blur(10px);
+        position: absolute;
+        height: 5rem;
+        width: 65%;
+        padding: 2.6rem 2.8rem 3rem 2.8rem;
+        border-left: 1px solid white;
+        border-bottom: 1px solid white;
     }
 
 }

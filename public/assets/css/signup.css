@@ -1,6 +1,17 @@
 .sign-header {
-    padding: 8rem;
+    padding: 9rem 9rem 0.5rem 9rem;
     background-color: var(--primary);
+}
+
+.h2-sign {
+    background-color: #132028;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3.125rem;
+    color: white;
+    font-family: var(--font-family-primary);
+    font-size: 5rem;
 }
 
 .formulaire-sign {
