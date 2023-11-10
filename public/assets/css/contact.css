@@ -1,0 +1,113 @@
+.contact-header {
+    padding: 6rem;
+    background-color: var(--primary);
+}
+
+.contact {
+    padding: 1%;
+    background-color: #132028;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3.125rem;
+    color: white;
+    font-family: var(--font-family-primary);
+    font-size: 5rem;
+}
+
+.blackline {
+    width: 0.2rem;
+    height: 50%;
+    position: absolute;
+    background-color: var(--primary);
+    margin: 0;
+    padding: 0;
+}
+
+.principale {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.horaires {
+    color: #132028;
+    align-self: center;
+    margin: auto;
+}
+
+
+.contact-input {
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+
+
+.contact-input:focus::placeholder {
+    color: #132028;
+}
+
+
+.input-form {
+    width: 25%;
+    margin: auto;
+    font-family: var(--font-family-primary);
+    font-size: 2.2rem;
+    border-radius: 20px;
+}
+
+input[type="text"],
+input[type="password"],
+textarea {
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #ccc;
+}
+
+.contact-button {
+    border-radius: 20px;
+    font-family: var(--font-family-primary);
+    font-size: 2rem;
+    text-transform: none;
+}
+
+
+/* Responsive */
+@media screen and (max-width: 1050px) {
+    .principale {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .blackline {
+        transform: rotate(90deg);
+        display: flex;
+        justify-content: center;
+        margin-top: 150px;
+        height: 50uh;
+
+    }
+
+    .input-form {
+        width: 60%;
+        margin-top: 200px;
+        font-size: larger;
+    }
+
+    .horaires {
+        display: flex;
+        flex-direction: column;
+        font-size: larger;
+        align-items: center;
+    }
+
+    .horaires p {
+        display: flex;
+        text-align: center;
+    }
+
+    h2 {
+        text-align: center;
+    }
+}
