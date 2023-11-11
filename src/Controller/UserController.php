@@ -1,7 +1,6 @@
 <?php
 
 namespace App\Controller;
-require "../../config/config.php";
 
 use App\Controller\AbstractController;
 use App\Model\UserManager;
@@ -79,19 +78,5 @@ class UserController extends AbstractController
         }
         $errors = array_filter($errors);
         return $errors;
-    }
-    public function checkLogin(): bool
-    {
-        $errors= array();
-        $pdo = new PDO(DB_DSN, DB_USER, DB_PASS);
-
-        // Différentes vérifications;
-
-
-        // Verif pas d'erreurs
-        if (empty($errors))
-            return true;
-
-        return false;
     }
 }
