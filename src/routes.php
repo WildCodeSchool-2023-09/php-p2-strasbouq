@@ -17,5 +17,5 @@ return [
     'login' => ['LoginController', 'login'],
     'contact' => ['ContactController', 'addContact'],
     'personal_bouquet' => ['PersonalBouquetController', 'personalBouquet',],
-    'checklogin' => ['UserController', 'checkLogin'],
+    'dashboard' => ['AdminDashboardController', 'index'],
 ];

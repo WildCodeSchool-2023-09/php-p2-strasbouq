@@ -1,6 +1,17 @@
 .login-header {
-    padding: 8rem;
+    padding: 9rem 9rem 0.5rem 9rem;
     background-color: var(--primary);
+}
+
+.h2-login {
+    background-color: #132028;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3.125rem;
+    color: white;
+    font-family: var(--font-family-primary);
+    font-size: 5rem;
 }
 
 .formulaire-log {
@@ -49,6 +60,15 @@
     color: white;
     font-size: 2rem;
     text-transform: none;
+}
+
+.log-creat a {
+    font-family: var(--font-family-primary);
+    color: white;
+    font-size: 2rem;
+    text-transform: none;
+    text-decoration: underline;
+    text-align: center;
 }
 
 .button1-mdp:hover {
