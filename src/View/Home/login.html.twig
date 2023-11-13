@@ -14,11 +14,14 @@
 		<div class="formulaire-log">
 			<form class="uk-margin" method='post'>
 				<div class="uk-form-controls">
-					<input class="login-input uk-input" id="form-horizontal-text" type="text" placeholder="Identifiant" name='userId'>
-				</div>
-				<div class="uk-form-controls">
+					{% if errors.email is defined %}
+						<div class='logError'>{{ errors.email }}</div>
+					{% endif %}
 					<input class="login-input uk-input" id="form-horizontal-text" type="text" placeholder="Email" name='email'>
 				</div>
+				{% if errors.password is defined %}
+					<div class='logError'>{{ errors.password }}</div>
+				{% endif %}
 				<div class="uk-form-controls">
 					<input class="login-input uk-input" id="form-horizontal-text" type="text" placeholder="Mot de passe" name='password'>
 				</div>
