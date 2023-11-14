@@ -7,7 +7,7 @@ use PDO;
 
 class UserManager extends AbstractManager
 {
-    public const TABLE = 'customers';
+    public const TABLE = 'customer';
 
     public function insert(array $signForm)
     {
@@ -25,7 +25,8 @@ class UserManager extends AbstractManager
     }
     public function userLogin(array $userLogin)
     {
-        $statement = $this->pdo->prepare('SELECT email, password FROM ' . self::TABLE . 'WHERE email=:email and password=:password');
+        $statement = $this->pdo->
+        prepare('SELECT email, password FROM ' . self::TABLE . 'WHERE email=:email and password=:password');
         $statement->bindValue('email', $userLogin['email'], PDO::PARAM_STR);
         $statement->bindValue('password', $userLogin['password'], PDO::PARAM_STR);
         $statement->execute();
