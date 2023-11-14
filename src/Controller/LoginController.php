@@ -4,6 +4,8 @@ namespace App\Controller;
 
 use App\Controller\AbstractController;
 use App\Controller\VerifyController;
+use PDO;
+use App\Model\UserManager;
 
 class LoginController extends AbstractController
 {
@@ -15,7 +17,12 @@ class LoginController extends AbstractController
         if (!empty($_POST)) {
             $formLog = array_map('trim', $_POST);
             $errors = $this->loginValidate($formLog);
-        }
+            if (empty($errors)) {
+                $userManager= new UserManager();
+                $login = $userManager->userLogin($formLog); 
+                var_dump($login);
+            }
+        } 
         return $this->twig->render('Home/login.html.twig', ['errors' => $errors]);
     }
 
@@ -23,10 +30,14 @@ class LoginController extends AbstractController
     {
         $verifyController = new VerifyController();
 
+       // est ce qu'on a un résultat
+        // un seul résultat
+        
         $errors = [];
 
         $errors['email'] = $verifyController->verifyCommun($formLogin['email']);
         $errors['password'] = $verifyController->verifyCommun($formLogin['password']);
+        $errors=array_filter($errors);
         return $errors;
     }
 }
