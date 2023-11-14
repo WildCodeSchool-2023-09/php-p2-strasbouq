@@ -13,3 +13,9 @@ icons.addEventListener("click", () => {
 icons.addEventListener("click", () => {
     navBlur.classList.toggle("active")
 });
+
+document.getElementById('restock').addEventListener('change', function(evt) {
+    var type = this.selectedOptions[0].value;
+    console.dir(this);
+    document.getElementById('Value').setAttribute('name', type);
+});
