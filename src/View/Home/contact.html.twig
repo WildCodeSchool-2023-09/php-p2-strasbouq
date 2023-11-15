@@ -33,13 +33,31 @@
 		<div class="blackline"></div>
 		<form class="input-form" method='post'>
 			<h2>Nous contacter</h2>
+
+			{% if errors.name is defined %}
+				<div class='contactError'>{{ errors.name }}</div>
+			{% endif %}
 			<input class="contact-input uk-input" type="text" placeholder="Nom" name='name'>
+
+			{% if errors.email is defined %}
+				<div class='contactError'>{{ errors.email }}</div>
+			{% endif %}
+			{% if errors.emailFormat is defined %}
+				<div class='contactError'>{{ errors.emailFormat }}</div>
+			{% endif %}
 			<input class="contact-input uk-input" type="text" placeholder="Email" name='email'>
+
+			{% if errors.text is defined %}
+				<div class='contactError'>{{ errors.text }}</div>
+			{% endif %}
+			{% if errors.textTooLong is defined %}
+				<div class='contactError'>{{ errors.textTooLong }}</div>
+			{% endif %}
 			<input class="contact-input uk-input" type="text" placeholder="Texte" name='text'>
+
 			<div class="button-log">
 				<button class="contact-button uk-button uk-button-default">Submit</button>
 			</div>
 		</form>
-
 	</div>
 {% endblock %}
