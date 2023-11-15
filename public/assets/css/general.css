@@ -1,5 +1,4 @@
 * {
-    font-family: 'imperial script', 'roboto';
     list-style: none;
 }
 
@@ -50,6 +49,7 @@ nav ul {
     display: flex;
     justify-content: space-between;
     width: 50%;
+    font-family: var(--font-family-primary);
 }
 
 nav div {

@@ -36,8 +36,12 @@
     align-self: center;
     margin: auto;
     font-size: 1.5rem;
+    font-family: var(--font-family-primary);
 }
 
+.h1-contact {
+    font-family: var(--font-family-primary);
+}
 
 .contact-input {
     margin-bottom: 10px;

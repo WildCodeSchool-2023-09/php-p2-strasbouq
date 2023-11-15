@@ -1,0 +1,101 @@
+.restock-main {
+    margin: 7rem 20%;
+    
+}
+
+.restock-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.restock-input {
+    border: solid 3px var(--primary);
+    width: 20rem;
+    margin: 2rem;
+    font-size: 1.5rem;
+    
+}
+
+.restock-input-1 {
+    border: solid 3px var(--primary);
+    width: 20rem;
+    margin: 1rem;
+    font-size: 1.5rem;
+}
+
+.bouton-add-restock {
+    border: solid 3px var(--primary);
+    font-size: 1.5rem;
+}
+
+.bouton-add-restock:hover {
+    color: white;
+    background-color: var(--primary);
+    transition: .2s;
+    border: white solid 3px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 9px 2px grey,
+    -1px -1px 9px 2px rgb(180, 180, 180);
+    text-shadow: 0.5px 0.5px 15px white,
+    -0.5px -0.5px 20px white;
+}
+
+.table-review-restock {
+    margin: 5rem 11rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.restock-thead {
+    background-color: var(--primary);
+}
+
+.restock-thead th {
+    color: white;
+}
+
+.bouton-validate-restock {
+    border: solid 3px var(--primary);
+    font-size: 1.5rem;
+    margin-top: 2rem;
+}
+
+.bouton-validate-restock:hover {
+    color: white;
+    background-color: var(--primary);
+    transition: .2s;
+    border: white solid 3px;
+    border-radius: 5px;
+}
+
+tr.restock-td {
+    color: var(--primary);
+}
+
+.input-restock-edit {
+    border: solid 3px var(--primary);
+    width: 20rem;
+    margin: 1rem;
+    font-size: 1.5rem;
+}
+
+.bouton-restock-edit {
+    border: solid 3px var(--primary);
+    font-size: 1.5rem;
+}
+
+.bouton-restock-edit:hover {
+    color: white;
+    background-color: var(--primary);
+    transition: .2s;
+    border: white solid 3px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 9px 2px grey,
+    -1px -1px 9px 2px rgb(180, 180, 180);
+    text-shadow: 0.5px 0.5px 15px white,
+    -0.5px -0.5px 20px white;
+}
+

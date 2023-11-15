@@ -17,6 +17,9 @@ return [
     'login' => ['LoginController', 'login'],
     'contact' => ['ContactController', 'addContact'],
     'personal_bouquet' => ['PersonalBouquetController', 'personalBouquet',],
-    'dashboard' => ['AdminDashboardController', 'index'],
+    'dashboard' => ['AdminDashboardController', 'index',],
+    'stock' => ['StockController', 'index',],
+    'Admin/stock/edit' => ['StockController', 'edit', ['id']],
+    'Admin/stock/restock' => ['StockController', 'increment', ['id']],
     'catalogue' => ['CatalogueController', 'index',],
 ];
