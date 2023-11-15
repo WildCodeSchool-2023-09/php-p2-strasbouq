@@ -26,7 +26,6 @@ class UserController extends AbstractController
             if (empty($errors)) {
                 $userManager = new UserManager();
                 $userManager->insert($signForm);
-                var_dump($signForm);
                 //Si les étapes du dessus sont validées, on est envoyés a l'accueil
                 header('Location:/');
             }

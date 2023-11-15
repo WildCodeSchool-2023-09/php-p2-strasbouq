@@ -23,4 +23,13 @@ class VerifyController extends AbstractController
         }
         return $error;
     }
+
+    public function verifyRestock(string $quantity)
+    {
+        $error = '';
+        if ($quantity < 0) {
+            $error = 'Le nombre doit etre positif';
+        }
+        return $error;
+    }
 }

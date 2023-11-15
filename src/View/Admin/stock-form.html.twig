@@ -1,0 +1,40 @@
+{% extends 'admin.html.twig' %}
+
+{% block title %}
+	Stockage
+{% endblock %}
+
+{% block content %}
+	
+
+	<main class='restock-main'>	
+		
+		<div class='table-review-restock'>
+			<h1 class='uk-align-center'>Stock</h1>
+			<table class="uk-table uk-table-middle uk-table-responsive uk-table-divider">
+				<thead class='restock-thead'>
+					<tr>
+						<th>Produit</th>
+						<th>Quantité</th>
+						<th>Price</th>
+						<th></th>
+					</tr>
+				</thead>
+					{% for stock in stocks %}
+						<tbody>
+							<tr>
+								<td class='restock-td'>{{ stock.name }}</td>
+								<td class='restock-td'>{{ stock.quantity }}</td>
+								<td class='restock-td'>{{ stock.price }} €</td>
+								<td>
+								<a href="Admin/stock/edit?id={{ stock.id }}" uk-icon="pencil"></a>
+								<a href="Admin/stock/restock?id={{ stock.id }}" uk-icon="plus"></a>
+								</td>
+							</tr>
+						</tbody>
+					{% endfor %}
+			</table>
+            
+		</div>
+	</main>
+{% endblock %}
