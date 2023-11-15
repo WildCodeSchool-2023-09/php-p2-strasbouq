@@ -15,8 +15,8 @@ return [
     'items/delete' => ['ItemController', 'delete',],
     'signup' => ['UserController', 'addUser',],
     'login' => ['LoginController', 'login'],
-    'contact' => ['ContactController', 'addContact'],
+    'contact' => ['ContactController', 'addContact',],
     'personal_bouquet' => ['PersonalBouquetController', 'personalBouquet',],
-    'dashboard' => ['AdminDashboardController', 'index'],
-    'categorie/show'=> ['CategorieController', 'show', ['id']], 
+    'dashboard' => ['AdminDashboardController', 'index',],
+    'categorie/show' => ['CategorieController', 'show', ['id']],
 ];
