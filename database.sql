@@ -47,7 +47,6 @@ SET time_zone = "+00:00";
 -- Structure de la table `item`
 --
 
-USE projet_2;
 
 CREATE TABLE
     `item` (
@@ -171,6 +170,7 @@ SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
 
 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
 
+
 --
 
 -- Contenu de la table `item`
@@ -187,6 +187,12 @@ VALUES (1, 'Stuff'), (2, 'Doodads');
 
 --
 
+CREATE TABLE IF NOT EXISTS `contact`(
+  `id` int PRIMARY KEY AUTO_INCREMENT NOT NULL,
+  `name` varchar(50) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `text` VARCHAR(200) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 --
 
 -- Index pour la table `item`
@@ -207,6 +213,7 @@ ALTER TABLE `item` ADD PRIMARY KEY (`id`);
 
 --
 
+
 ALTER TABLE
     `item` MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT,
     AUTO_INCREMENT = 3;
@@ -221,4 +228,11 @@ ALTER TABLE
 
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */
 
-;
+CREATE TABLE IF NOT EXISTS `sign`(
+  `id` int PRIMARY KEY AUTO_INCREMENT NOT NULL,
+  `userID` VARCHAR(40) NOT NULL,
+  `lastname` varchar(200) NOT NULL,
+  `firstname` VARCHAR(200) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `password` VARCHAR(200) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
