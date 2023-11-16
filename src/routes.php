@@ -22,4 +22,8 @@ return [
     'Admin/stock/edit' => ['StockController', 'edit', ['id']],
     'Admin/stock/restock' => ['StockController', 'increment', ['id']],
     'catalogue' => ['CatalogueController', 'index',],
+    'catalogue/vase' => ['CatalogueController', 'sortVase',],
+    'catalogue/bouquet' => ['CatalogueController', 'sortBouquet',],
+    'catalogue/fleur' => ['CatalogueController', 'sortFleur',],
+    'catalogue/plante' => ['CatalogueController', 'sortPlante',],
 ];
