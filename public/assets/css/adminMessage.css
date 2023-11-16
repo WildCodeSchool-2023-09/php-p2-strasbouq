@@ -1,0 +1,8 @@
+.admin-main-message {
+    margin: 7rem 20%;
+}
+
+.thead-admin-message th{
+    background-color: var(--primary);
+    color: white;
+}

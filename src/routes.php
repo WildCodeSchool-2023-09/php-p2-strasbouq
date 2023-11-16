@@ -22,4 +22,6 @@ return [
     'Admin/stock/edit' => ['StockController', 'edit', ['id']],
     'Admin/stock/restock' => ['StockController', 'increment', ['id']],
     'categorie/show' => ['CategorieController', 'show', ['id']],
+    'message' => ['AdminMessageController', 'index'],
+    'message/delete' => ['AdminMessageController', 'delete', ['id']],
 ];
