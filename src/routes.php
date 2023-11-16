@@ -21,4 +21,6 @@ return [
     'stock' => ['StockController', 'index',],
     'Admin/stock/edit' => ['StockController', 'edit', ['id']],
     'Admin/stock/restock' => ['StockController', 'increment', ['id']],
+    'message' => ['AdminMessageController', 'index'],
+    'message/delete' => ['AdminMessageController', 'delete', ['id']],
 ];

@@ -9,7 +9,10 @@ class StockController extends AbstractController
 {
     public function index(): string
     {
-        $stockManager = new StockManager(); 
+
+        $stockManager = new StockManager();
+
+
         $stocks = $stockManager->selectAll();
 
         return $this->twig->render('Admin/stock-form.html.twig', ['stocks' => $stocks]);
@@ -20,7 +23,7 @@ class StockController extends AbstractController
         $stockManager = new StockManager();
         if (!empty($_POST)) {
             $stockManager->update($_POST);
-            
+
             header('Location:/stock');
         }
 
@@ -37,7 +40,7 @@ class StockController extends AbstractController
             $stockManager->increment($_POST);
             header('Location:/stock');
         }
-        
+
         $restocks = $stockManager->selectOneById($id);
 
         return $this->twig->render('Admin/stock-restock.html.twig', ['restocks' => $restocks]);
