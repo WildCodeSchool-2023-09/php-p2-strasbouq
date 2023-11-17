@@ -10,7 +10,8 @@
     "minimum-stability": "stable",
     "require": {
         "twig/twig": "^3.5.1",
-        "ext-pdo": "*"
+        "ext-pdo": "*",
+        "phpro/grumphp": "^2.2"
     },
     "require-dev": {
         "filp/whoops": "^2.15",
@@ -24,5 +25,8 @@
         }
     },
     "config": {
+        "allow-plugins": {
+            "phpro/grumphp": true
+        }
     }
 }
