@@ -6,3 +6,7 @@
     background-color: var(--primary);
     color: white;
 }
+
+.h2-messageAdmin {
+    text-align: center;
+}

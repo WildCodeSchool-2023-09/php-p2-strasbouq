@@ -23,4 +23,9 @@ return [
     'Admin/stock/restock' => ['StockController', 'increment', ['id']],
     'message' => ['AdminMessageController', 'index'],
     'message/delete' => ['AdminMessageController', 'delete', ['id']],
+    'gestionProduit' => ['GestionProduitController', 'index',],
+    'gestionProduit/edit' => ['GestionProduitController', 'edit', ['id']],
+    'gestionProduit/delete' => ['GestionProduitController', 'delete', ['id']],
+    'gestionProduit/add' => ['GestionProduitController', 'add',],
+    'logout' => ['LoginController', 'logout',],
 ];
