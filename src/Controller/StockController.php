@@ -20,7 +20,6 @@ class StockController extends AbstractController
         $stockManager = new StockManager();
         if (!empty($_POST)) {
             $stockManager->update($_POST);
-
             header('Location:/stock');
         }
 
@@ -36,7 +35,6 @@ class StockController extends AbstractController
             $stockManager->increment($_POST);
             header('Location:/stock');
         }
-
         $restocks = $stockManager->selectOneById($id);
 
         return $this->twig->render('Admin/stock-restock.html.twig', ['restocks' => $restocks]);

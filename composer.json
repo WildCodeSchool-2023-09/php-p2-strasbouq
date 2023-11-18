@@ -11,8 +11,7 @@
     "require": {
         "twig/twig": "^3.5.1",
         "ext-pdo": "*",
-        "phpro/grumphp": "*"
-        
+        "phpro/grumphp": "^2.2"
     },
     "require-dev": {
         "filp/whoops": "^2.15",

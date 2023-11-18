@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family-primary);
+    background-color: #f0f0f0;
+}
+
+.container-page {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.error {
+    font-size: 10rem;
+    color: #bf808c;
+    font-family: var(--font-family-primary);
+}
+
+.message {
+    font-size: 2rem;
+    color: #132028;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5rem;
+}
+
+button {
+    width: 100px;
+    height: 50px;
+    border-radius: 1rem;
+
+
+}
+
+.link {
+    font-size: 1rem;
+    color: #201659f9;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+    .error {
+        font-size: 8rem;
+    }
+
+    .message {
+        font-size: 1.5rem;
+    }
+
+    .link {
+        font-size: 1rem;
+    }
+
+}
