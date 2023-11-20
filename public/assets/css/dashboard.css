@@ -17,3 +17,8 @@
 .parent-grid-dashboard {
     margin-top: 10rem;
 }
+
+.h2-dashboardAdmin {
+    text-align: center;
+    font-size: 3rem;
+}

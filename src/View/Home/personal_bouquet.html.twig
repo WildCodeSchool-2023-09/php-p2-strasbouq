@@ -6,107 +6,112 @@
 {% endblock %}
 
 {% block content %}
-<header class="personal_bouquet_hedaer"></header>
+	<header class="personal_bouquet_hedaer"></header>
 	<main class='personal_bouquet_main'>
-		<ul class='personal_bouquet_nav_choice'uk-tab>
-			<li class='personal_bouquet_liste'>
-				<a href="#">Forme du bouquet</a>
-			</li>
-			<li class='personal_bouquet_liste'>
-				<a href="#">Choix de la couleur</a>
-			</li>
-			<li class='personal_bouquet_liste'>
-				<a href="#">Choix des fleurs</a>
-			</li>
-			<li class='personal_bouquet_liste'>
-				<a href="#">choix des herbes</a>
-			</li>
-		</ul>
+	
+		<form action="" method='post'>
+		
+			<ul class='personal_bouquet_nav_choice' uk-tab>
+				<li class='personal_bouquet_liste'>
+					<a href="#">Forme du bouquet</a>
+				</li>
+				<li class='personal_bouquet_liste'>
+					<a href="#">Choix de la couleur</a>
+				</li>
+				<li class='personal_bouquet_liste'>
+					<a href="#">Choix des fleurs</a>
+				</li>
+				<li class='personal_bouquet_liste'>
+					<a href="#">choix des herbes</a>
+				</li>
+			</ul>
 			<ul class="uk-switcher uk-margin">
 				<ul class='flex-choix'>
 					<li class='personal_bouquet_forme'>
 						<div class='personal_bouquet_img_choix_rond'></div>
-						<input class ='personal_bouquet_input' type="checkbox" id="myCheckbox1" />
-    					<label class ='personal_bouquet_label' for="myCheckbox1">Rond</label>
+						<input class='personal_bouquet_input' type="checkbox" id="myCheckbox1"/>
+						<label class='personal_bouquet_label' for="myCheckbox1">Rond</label>
 					</li>
 					<li class='personal_bouquet_forme'>
 						<div class='personal_bouquet_img_choix_champetre'></div>
-						<input class ='personal_bouquet_input' type="checkbox" id="myCheckbox2" />
-    					<label class ='personal_bouquet_label' for="myCheckbox2">Champetre</label>
+						<input class='personal_bouquet_input' type="checkbox" id="myCheckbox2"/>
+						<label class='personal_bouquet_label' for="myCheckbox2">Champetre</label>
 					</li>
 				</ul>
 				<ul class='flex-choix'>
 					<li class='personal_bouquet_couleur'>
 						<div class='personal_bouquet_choix_rouge'></div>
-						<input class ='personal_bouquet_input' type="checkbox" id="myCheckbox3" />
-    					<label class ='personal_bouquet_label' for="myCheckbox3">Rouge</label>
+						<input class='personal_bouquet_input' type="checkbox" id="myCheckbox3"/>
+						<label class='personal_bouquet_label' for="myCheckbox3">Rouge</label>
 					</li>
 					<li class='personal_bouquet_couleur'>
 						<div class='personal_bouquet_choix_blanc'></div>
-						<input class ='personal_bouquet_input' type="checkbox" id="myCheckbox4" />
-    					<label class ='personal_bouquet_label' for="myCheckbox4">Blanc</label>
+						<input class='personal_bouquet_input' type="checkbox" id="myCheckbox4"/>
+						<label class='personal_bouquet_label' for="myCheckbox4">Blanc</label>
 					</li>
 					<li class='personal_bouquet_couleur'>
 						<div class='personal_bouquet_choix_jaune'></div>
-						<input class ='personal_bouquet_input' type="checkbox" id="myCheckbox5" />
-    					<label class ='personal_bouquet_label' for="myCheckbox5">Jaune</label>
+						<input class='personal_bouquet_input' type="checkbox" id="myCheckbox5"/>
+						<label class='personal_bouquet_label' for="myCheckbox5">Jaune</label>
 					</li>
 					<li class='personal_bouquet_couleur'>
 						<div class='personal_bouquet_choix_rose'></div>
-						<input class ='personal_bouquet_input' type="checkbox" id="myCheckbox6" />
-    					<label class ='personal_bouquet_label' for="myCheckbox6">Rose</label>
+						<input class='personal_bouquet_input' type="checkbox" id="myCheckbox6"/>
+						<label class='personal_bouquet_label' for="myCheckbox6">Rose</label>
 					</li>
 					<li class='personal_bouquet_couleur'>
 						<div class='personal_bouquet_choix_violet'></div>
-						<input class ='personal_bouquet_input' type="checkbox" id="myCheckbox7" />
-    					<label class ='personal_bouquet_label' for="myCheckbox7">Violet</label>
+						<input class='personal_bouquet_input' type="checkbox" id="myCheckbox7"/>
+						<label class='personal_bouquet_label' for="myCheckbox7">Violet</label>
 					</li>
 					<li class='personal_bouquet_couleur'>
 						<div class='personal_bouquet_choix_orange'></div>
-						<input class ='personal_bouquet_input' type="checkbox" id="myCheckbox8" />
-    					<label class ='personal_bouquet_label' for="myCheckbox8">Orange</label>
+						<input class='personal_bouquet_input' type="checkbox" id="myCheckbox8"/>
+						<label class='personal_bouquet_label' for="myCheckbox8">Orange</label>
 					</li>
 				</ul>
 				<ul class='flex-choix'>
 					<li class='personal_bouquet_fleur'>
 						<div class='personal_bouquet_img_choix_rose'></div>
-						<input class ='personal_bouquet_input' type="checkbox" id="myCheckbox9" />
-    					<label class ='personal_bouquet_label' for="myCheckbox9">Rose</label>
+						<input class='personal_bouquet_input' type="checkbox" id="myCheckbox9"/>
+						<label class='personal_bouquet_label' for="myCheckbox9">Rose</label>
 					</li>
 					<li class='personal_bouquet_fleur'>
 						<div class='personal_bouquet_img_choix_tulipe'></div>
-						<input class ='personal_bouquet_input' type="checkbox" id="myCheckbox10" />
-    					<label class ='personal_bouquet_label' for="myCheckbox10">Tulipes</label>
+						<input class='personal_bouquet_input' type="checkbox" id="myCheckbox10"/>
+						<label class='personal_bouquet_label' for="myCheckbox10">Tulipes</label>
 					</li>
 					<li class='personal_bouquet_fleur'>
 						<div class='personal_bouquet_img_choix_dahlia'></div>
-						<input class ='personal_bouquet_input' type="checkbox" id="myCheckbox11" />
-    					<label class ='personal_bouquet_label' for="myCheckbox11">Dahlias</label>
+						<input class='personal_bouquet_input' type="checkbox" id="myCheckbox11"/>
+						<label class='personal_bouquet_label' for="myCheckbox11">Dahlias</label>
 					</li>
 					<li class='personal_bouquet_fleur'>
 						<div class='personal_bouquet_img_choix_pivoine'></div>
-						<input class ='personal_bouquet_input' type="checkbox" id="myCheckbox12" />
-    					<label class ='personal_bouquet_label' for="myCheckbox12">Pivoines</label>
+						<input class='personal_bouquet_input' type="checkbox" id="myCheckbox12"/>
+						<label class='personal_bouquet_label' for="myCheckbox12">Pivoines</label>
 					</li>
 					<li class='personal_bouquet_fleur'>
 						<div class='personal_bouquet_img_choix_cosmos'></div>
-						<input class ='personal_bouquet_input' type="checkbox" id="myCheckbox13" />
-    					<label class ='personal_bouquet_label' for="myCheckbox13">Cosmos</label>
+						<input class='personal_bouquet_input' type="checkbox" id="myCheckbox13"/>
+						<label class='personal_bouquet_label' for="myCheckbox13">Cosmos</label>
 					</li>
 				</ul>
 				<ul class='flex-choix'>
 					<li class='personal_bouquet_herbes'>
 						<div class='personal_bouquet_img_choix_fougere'></div>
-						<input class ='personal_bouquet_input' type="checkbox" id="myCheckbox14" />
-    					<label class ='personal_bouquet_label' for="myCheckbox14">Fougeres</label>
+						<input class='personal_bouquet_input' type="checkbox" id="myCheckbox14"/>
+						<label class='personal_bouquet_label' for="myCheckbox14">Fougeres</label>
 					</li>
 					<li class='personal_bouquet_herbes'>
 						<div class='personal_bouquet_img_choix_eucalyptus'></div>
-						<input class ='personal_bouquet_input' type="checkbox" id="myCheckbox15" />
-    					<label class ='personal_bouquet_label' for="myCheckbox15">Eucalyptus</label>
+						<input class='personal_bouquet_input' type="checkbox" id="myCheckbox15"/>
+						<label class='personal_bouquet_label' for="myCheckbox15">Eucalyptus</label>
+						<button type='submit'>Valider</button>
 					</li>
 				</ul>
 			</ul>
-		</form>	
+			
+		</form>
 	</main>
 {% endblock %}
