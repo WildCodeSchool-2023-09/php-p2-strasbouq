@@ -16,7 +16,7 @@ return [
     'signup' => ['UserController', 'addUser',],
     'login' => ['LoginController', 'login'],
     'contact' => ['ContactController', 'addContact',],
-    'personal_bouquet' => ['PersonalBouquetController', 'personalBouquet',],
+    'personal_bouquet' => ['PersonalBouquetController', 'index',],
     'dashboard' => ['AdminDashboardController', 'index',],
     'stock' => ['StockController', 'index',],
     'Admin/stock/edit' => ['StockController', 'edit', ['id']],

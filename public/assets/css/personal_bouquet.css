@@ -125,39 +125,16 @@
 
 .bouquet-personnalise-rose {
     background: url(../images/rose.jpg);
-    padding: 5rem;
+    padding: 8rem;
     background-position: center;
     background-size: cover;
     border: 8px solid var(--primary);
     border-radius: 10px;
 }
-.bouquet-personnalise-tulipe {
-    background: url(../images/tulipe.jpg);
-    padding: 5rem;
-    background-position: center;
-    background-size: cover;
-    border: 8px solid var(--primary);
-    border-radius: 10px;
-}
+
 .bouquet-personnalise-dahlia {
     background: url(../images/dahlia.jpg);
-    padding: 5rem;
-    background-position: center;
-    background-size: cover;
-    border: 8px solid var(--primary);
-    border-radius: 10px;
-}
-.bouquet-personnalise-pivoine {
-    background: url(../images/pivoine.jpg);
-    padding: 5rem;
-    background-position: center;
-    background-size: cover;
-    border: 8px solid var(--primary);
-    border-radius: 10px;
-}
-.bouquet-personnalise-cosmos {
-    background: url(../images/cosmos.jpg);
-    padding: 5rem;
+    padding: 8rem;
     background-position: center;
     background-size: cover;
     border: 8px solid var(--primary);
@@ -213,4 +190,34 @@
     background-color: white;
     color: var(--primary);
     transition: 0.3s;
+}
+
+.bouquetPersonnalise-fleurs-segondaire {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.bouquet-personnalise-tulipe {
+    background: url(../images/tulipe.jpg);
+    padding: 7rem;
+    background-position: center;
+    background-size: cover;
+    border: 8px solid var(--primary);
+    border-radius: 10px;
+}.bouquet-personnalise-pivoine {
+    background: url(../images/pivoine.jpg);
+    padding: 7rem;
+    background-position: center;
+    background-size: cover;
+    border: 8px solid var(--primary);
+    border-radius: 10px;
+}
+.bouquet-personnalise-cosmos {
+    background: url(../images/cosmos.jpg);
+    padding: 7rem;
+    background-position: center;
+    background-size: cover;
+    border: 8px solid var(--primary);
+    border-radius: 10px;
 }
