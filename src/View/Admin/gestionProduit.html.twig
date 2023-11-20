@@ -1,0 +1,49 @@
+{% extends 'admin.html.twig' %}
+
+{% block title %}
+	Gestion Produits
+{% endblock %}
+
+{% block content %}
+	<main class='main-gestion-produit'>
+		<h2>Gestion des produits</h2>
+		<a href="/gestionProduit/add">
+			<button class="uk-button uk-button-default uk-button-primary uk-width-medium" type="button">Ajouter un article</button>
+		</a>
+		<table class="uk-table uk-table-middle uk-table-divider">
+			<thead class='thead-gestion-produit'>
+				<tr>
+					<th class="uk-width-small">Nom</th>
+					<th class="uk-width-small">Prix</th>
+					<th class="uk-width-small">Position</th>
+					<th class="uk-width-small">Quantité</th>
+					<th class="uk-width-small">Catégorie</th>
+					<th class="uk-width-medium">Description</th>
+					<th>Image</th>
+					<th></th>
+				</tr>
+			</thead>
+			<tbody>
+				{% for produit in produits %}
+					<tr>
+						<td>{{ produit.name }}</td>
+						<td>{{ produit.price }}€</td>
+						<td>{{ produit.position }}</td>
+						<td>{{ produit.quantity }}</td>
+						<td>{{ produit.categorie }}</td>
+						<td>{{ produit.description }}</td>
+						<td><img src="/upload/{{ produit.image }}" alt="{{ produit.name }}" width='150px'></td>
+						<td>
+							<a href="gestionProduit/edit?id={{ produit.id }}">
+								<button class="boutons-gestion-produit uk-button uk-button-default" type="button">Modifier</button>
+							</a>
+							<a href="gestionProduit/delete/?id={{ produit.id }}">
+								<button class="boutons-gestion-produit uk-button uk-button-default" type="button">Supprimer</button>
+							</a>
+						</td>
+					</tr>
+				{% endfor %}
+			</tbody>
+		</table>
+	</main>
+{% endblock %}

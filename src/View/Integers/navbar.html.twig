@@ -1,24 +1,42 @@
 <nav id="nav">
-    <h3 class="titreNav">Stras'bouq</h3>
+	<h3 class="titreNav">Stras'bouq</h3>
+	<img src="/assets/images/layer2.png" alt="" class="logo">
+	<ul class="menuCentre">
+		<div class='hiddenText' id='hiddenText'></div>
+		<li>
+			<a href="/" class='nav-a'>Home
+			</a>
+		</li>
+		<li>
+			<a href="personal_bouquet" class='nav-a'>Bouquet personalisé
+			</a>
+		</li>
+		<li>
+			<a href="#" class='nav-a'>Catégories
+			</a>
+		</li>
 
-    <img src="/assets/images/layer2.png" alt="Logo Stras'bouq" class="logo">
-    <ul class="menuCentre" >
-        <div class='hiddenText' id='hiddenText'></div>
-            <li>
-                <a href="/" class='nav-a'>Home </a>
-            </li>
-            <li>
-                <a href="personal_bouquet" class='nav-a'>Bouquet personnalisé </a>
-            </li>
-            <li>
-                <a href="#" class='nav-a'>Catégories </a>
-            </li>
-        
-    </ul>
-    <div class="menuDroite">
-            <li><a href="login" class='nav-a'><img src="/assets/images/account.png" alt='mon compte'></a></li>
-            <li><a href="#" class='nav-a'><img src="/assets/images/panier.png" alt='panier'></a></li>
+	</ul>
 
-    </div>
-    <div id="icons"></div>
+	<div class="menuDroite">
+		{% if session.isAdmin == true %}
+
+			<li>
+				<a href="dashboard" class='uk-margin-left uk-margin-right' uk-icon="icon: settings; ratio: 3"></a>
+			</li>
+		{% endif %}
+		{% if session.isLoggin %}
+			<li>
+				<a href="logout" uk-icon="icon: sign-out; ratio: 3"></a>
+			</li>
+			<li>
+				<a href="#" class='nav-a'><img src="/assets/images/panier.png"></a>
+			</li>
+		{% else %}
+			<li>
+				<a href="login" class='nav-a'><img src="/assets/images/account.png"></a>
+			</li>
+		{% endif %}
+	</div>
+	<div id="icons"></div>
 </nav>

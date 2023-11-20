@@ -42,3 +42,8 @@ class CategorieController extends AbstractController
         return $this->twig->render('Home/cataloguePlante.html.twig', ['produits' => $produits]);
     }
 }
+    public function show()
+    {
+        return $this->twig->render('Home\product-page.html.twig');
+    }
+}
