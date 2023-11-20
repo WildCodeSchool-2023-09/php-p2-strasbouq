@@ -1,0 +1,26 @@
+{% extends 'admin.html.twig' %}
+
+{% block title %}
+	Commandes
+{% endblock %}
+
+{% block content %}
+	<main class='main-commandes'>
+		<h1 class='h1-commandes uk-text-center'>Commandes en cours</h1>
+		<div class='uk-grid'>
+			{% for commande in commandes %}
+				<div class="carte-commande uk-card uk-card-default uk-card-body uk-width-1-4@m">
+					<ul>
+                        <h2>Commande {{ commande.id }}</h2>
+						<li>Forme : {{ commande.forme }}</li>
+						<li>Couleur : {{ commande.couleur }}</li>
+						<li>Fleur 1 : {{ commande.fleur1 }}</li>
+						<li>Fleur 2 : {{ commande.fleur2 }}</li>
+						<li>Herbe : {{ commande.herbe }}</li>
+                        <input type="checkbox" class='input-commande'>
+					</ul>
+				</div>
+			{% endfor %}
+		</div>
+	</main>
+{% endblock %}
