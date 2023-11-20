@@ -32,4 +32,15 @@ class UserManager extends AbstractManager
         $statement->execute();
         return $statement->fetch();
     }
+
+    public function selectOneByEmail(string $email): array|false
+    {
+        // prepared request
+        $statement = $this->pdo->prepare("SELECT * FROM " . self::TABLE . "    WHERE email=:email");
+        $statement->bindValue(':email', $email);
+
+        $statement->execute();
+
+        return $statement->fetch();
+    }
 }

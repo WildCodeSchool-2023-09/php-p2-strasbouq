@@ -1,0 +1,29 @@
+{% extends 'admin.html.twig' %}
+
+{% block content %}
+    <form action="" method='post' class='uk-position-center'>
+
+        <div class="uk-margin">
+            <label for="name">Produit:</label>
+            <input class="input-restock-edit uk-input uk-form-width-large" placeholder="{{ restocks.name }}" readonly='true' aria-label="Input" name='name' >
+        </div>
+
+        <div class="uk-margin">
+            <label for="quantity">Quantité actuelle:</label>
+            <input class="input-restock-edit uk-input uk-margin-top uk-form-width-large" placeholder="{{ restocks.quantity }}" readonly='true' aria-label="Input" name='quantity'>
+        </div>
+
+        <div class="uk-margin">
+            <label for="">Ajouter une quantité:</label>
+            <input class="input-restock-edit uk-input uk-margin-top uk-form-width-large" aria-label="Input"  name='refill' placeholder='Ajouter'>
+        </div>
+
+        <div class="uk-margin">
+            <input type='hidden' name='id' value='{{ restocks.id }}'>
+        </div>
+
+        <button class="bouton-restock-edit uk-align-center uk-button uk-button-default uk-margin-bottom">Valider</button>
+
+        <a href="/stock"class="bouton-restock-edit uk-align-center uk-button uk-button-default uk-margin-bottom">Page précédente</a>
+    </form>
+{% endblock %}

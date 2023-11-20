@@ -1,52 +1,26 @@
-{% extends 'layout.html.twig' %}
+{% extends 'admin.html.twig' %}
 
 {% block title %}
     Admin Dashboard
 {% endblock %}
 
 {% block content %}
-<header class='header-dashboard'>
-    <button class="bouton-open-dashboard uk-button uk-button-default" type="button" uk-toggle="target: #offcanvas-overlay">Open</button>
-    <div id="offcanvas-overlay" uk-offcanvas="overlay: true">
-        <div class="uk-offcanvas-bar">
-            <button class="uk-offcanvas-close" type="button" uk-close></button>
-            <h3 class='h3-admin-dashboard'>Dashboard</h3>
-            <div class="uk-width-1-2@s uk-width-2-5@m">
-                <ul class="admin-ul-dashboard uk-nav uk-nav-default">
-                    <li class='admin-nav-liste'><a href="dashboard">Dashboard</a></li>
-                    <li class='admin-nav-liste'><a href="#">Commandes</a></li>
-                    <li class='admin-nav-liste'><a href="#">Boutique</a></li>
-                    <li class='admin-nav-liste'><a href="#">Stock</a></li>
-                    <li class='admin-nav-liste'><a href="#">Formulaire de Stock</a></li>
-                    <li class='admin-nav-liste'><a href="#">Message clients</a></li>
-                    <li class='admin-nav-liste'><a href="#">Gestion promotions</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</header>
 
 <main class='main-dashboard uk-container'>
+    <h2 class='h2-dashboardAdmin'>Dashboard</h2>
     <div class="parent-grid-dashboard uk-child-width-1-3@m uk-text-center uk-link-text" uk-grid>
         <div>
-            <a href="" class='grid-dashboard'><li class="uk-card uk-card-default uk-card-body">Commandes</li></a>
+            <a href="#" class='grid-dashboard'><li class="uk-card uk-card-default uk-card-body">Commandes</li></a>
         </div>
         <div>
-            <a href="" class='grid-dashboard'><li class="uk-card uk-card-default uk-card-body">Boutique</li></a>
+            <a href="gestionProduit" class='grid-dashboard'><li class="uk-card uk-card-default uk-card-body">Gestion produits</li></a>
         </div>
         <div>
-            <a href="" class='grid-dashboard'><li class="uk-card uk-card-default uk-card-body">Stock</li></a>
+            <a href="stock" class='grid-dashboard'><li class="uk-card uk-card-default uk-card-body">Stock</li></a>
         </div>
         <div>
-           <a href="" class='grid-dashboard'><li class="uk-card uk-card-default uk-card-body">Formulaire stock</li></a>
-        </div>
-        <div>
-            <a href="" class='grid-dashboard'><li class="uk-card uk-card-default uk-card-body">Messages clients</li></a>
-        </div>
-        <div>
-            <a href="" class='grid-dashboard'><li class="uk-card uk-card-default uk-card-body">Promotions</li></a>
-        </div>
-        
+            <a href="message" class='grid-dashboard'><li class="uk-card uk-card-default uk-card-body">Messages clients</li></a>
+        </div>           
     </div>
 </main>
 {% endblock %}

@@ -1,0 +1,25 @@
+{% extends 'layout.html.twig' %} 
+
+{% block title %} {{ parent() }}- produit{% endblock %} 
+
+{% block content %}
+<div class="banner">
+	<div class="banner-text">{{ produit.name }}</div>
+</div>
+<div class="produit-card uk-card uk-flex uk-container-xsmall uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+	<div class="uk-card-media-left uk-cover-container">
+		<img src="{{ produit.image }}"alt="{{ produit.name }}" uk-cover>
+		<canvas width="500" height="500"></canvas>
+	</div>
+	<div>
+		<div class="uk-card-body">
+			<h3 class="uk-card-title">{{ produit.price }}</h3>
+			<p>{{ produit.description }}</p>
+			<p uk-margin>
+				<button class="uk-button uk-button-default uk-button-large">Ajouter au panier</button>
+			</p>
+		</div>
+	</div>
+</div></div>
+
+{% endblock %}
