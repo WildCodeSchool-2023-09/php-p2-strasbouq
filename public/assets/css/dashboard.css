@@ -1,0 +1,24 @@
+.grid-dashboard li {
+    padding: 5rem;
+    font-size: 1.5rem;
+    font-family: var(--font-family-secondary);
+    border: solid 2px var(--primary);
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    background-color: var(--primary);
+    border-radius: 20px;
+}
+
+.grid-dashboard {
+    text-decoration: none;
+}
+
+.parent-grid-dashboard {
+    margin-top: 10rem;
+}
+
+.h2-dashboardAdmin {
+    text-align: center;
+    font-size: 3rem;
+}

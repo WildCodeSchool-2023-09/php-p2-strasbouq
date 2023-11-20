@@ -1,11 +1,22 @@
 .login-header {
-    padding: 8rem;
+    padding: 9rem 9rem 0.5rem 9rem;
     background-color: var(--primary);
+}
+
+.h2-login {
+    background-color: #132028;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3.125rem;
+    color: white;
+    font-family: var(--font-family-primary);
+    font-size: 5rem;
 }
 
 .formulaire-log {
     background-color: var(--primary);
-    margin:4rem 20%;
+    margin: 4rem 20%;
     padding: 2rem;
     border-radius: 20px;
 }
@@ -51,6 +62,15 @@
     text-transform: none;
 }
 
+.log-creat a {
+    font-family: var(--font-family-primary);
+    color: white;
+    font-size: 2rem;
+    text-transform: none;
+    text-decoration: underline;
+    text-align: center;
+}
+
 .button1-mdp:hover {
     color: var(--primary);
     background-color: white;
@@ -63,12 +83,19 @@
     transition: 0.5s;
 }
 
+.logError {
+    color: red;
+    font-family: var(--font-family-secondary);
+    font-size: 1.1rem;
+    margin-left: 1rem;
+}
+
 @media screen and (width < 750px) {
     .login-input {
         font-size: 1.5rem;
     }
 
-    .button1-mdp{
+    .button1-mdp {
         font-size: 1.4rem;
     }
 

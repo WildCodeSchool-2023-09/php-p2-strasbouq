@@ -6,107 +6,100 @@
 {% endblock %}
 
 {% block content %}
-<header class="personal_bouquet_hedaer"></header>
+	<header class="personal_bouquet_hedaer"></header>
 	<main class='personal_bouquet_main'>
-		<ul class='personal_bouquet_nav_choice'uk-tab>
-			<li class='personal_bouquet_liste'>
-				<a href="#">Forme du bouquet</a>
-			</li>
-			<li class='personal_bouquet_liste'>
-				<a href="#">Choix de la couleur</a>
-			</li>
-			<li class='personal_bouquet_liste'>
-				<a href="#">Choix des fleurs</a>
-			</li>
-			<li class='personal_bouquet_liste'>
-				<a href="#">choix des herbes</a>
-			</li>
-		</ul>
-			<ul class="uk-switcher uk-margin">
-				<ul class='flex-choix'>
-					<li class='personal_bouquet_forme'>
-						<div class='personal_bouquet_img_choix_rond'></div>
-						<input class ='personal_bouquet_input' type="checkbox" id="myCheckbox1" />
-    					<label class ='personal_bouquet_label' for="myCheckbox1">Rond</label>
-					</li>
-					<li class='personal_bouquet_forme'>
-						<div class='personal_bouquet_img_choix_champetre'></div>
-						<input class ='personal_bouquet_input' type="checkbox" id="myCheckbox2" />
-    					<label class ='personal_bouquet_label' for="myCheckbox2">Champetre</label>
-					</li>
-				</ul>
-				<ul class='flex-choix'>
-					<li class='personal_bouquet_couleur'>
-						<div class='personal_bouquet_choix_rouge'></div>
-						<input class ='personal_bouquet_input' type="checkbox" id="myCheckbox3" />
-    					<label class ='personal_bouquet_label' for="myCheckbox3">Rouge</label>
-					</li>
-					<li class='personal_bouquet_couleur'>
-						<div class='personal_bouquet_choix_blanc'></div>
-						<input class ='personal_bouquet_input' type="checkbox" id="myCheckbox4" />
-    					<label class ='personal_bouquet_label' for="myCheckbox4">Blanc</label>
-					</li>
-					<li class='personal_bouquet_couleur'>
-						<div class='personal_bouquet_choix_jaune'></div>
-						<input class ='personal_bouquet_input' type="checkbox" id="myCheckbox5" />
-    					<label class ='personal_bouquet_label' for="myCheckbox5">Jaune</label>
-					</li>
-					<li class='personal_bouquet_couleur'>
-						<div class='personal_bouquet_choix_rose'></div>
-						<input class ='personal_bouquet_input' type="checkbox" id="myCheckbox6" />
-    					<label class ='personal_bouquet_label' for="myCheckbox6">Rose</label>
-					</li>
-					<li class='personal_bouquet_couleur'>
-						<div class='personal_bouquet_choix_violet'></div>
-						<input class ='personal_bouquet_input' type="checkbox" id="myCheckbox7" />
-    					<label class ='personal_bouquet_label' for="myCheckbox7">Violet</label>
-					</li>
-					<li class='personal_bouquet_couleur'>
-						<div class='personal_bouquet_choix_orange'></div>
-						<input class ='personal_bouquet_input' type="checkbox" id="myCheckbox8" />
-    					<label class ='personal_bouquet_label' for="myCheckbox8">Orange</label>
-					</li>
-				</ul>
-				<ul class='flex-choix'>
-					<li class='personal_bouquet_fleur'>
-						<div class='personal_bouquet_img_choix_rose'></div>
-						<input class ='personal_bouquet_input' type="checkbox" id="myCheckbox9" />
-    					<label class ='personal_bouquet_label' for="myCheckbox9">Rose</label>
-					</li>
-					<li class='personal_bouquet_fleur'>
-						<div class='personal_bouquet_img_choix_tulipe'></div>
-						<input class ='personal_bouquet_input' type="checkbox" id="myCheckbox10" />
-    					<label class ='personal_bouquet_label' for="myCheckbox10">Tulipes</label>
-					</li>
-					<li class='personal_bouquet_fleur'>
-						<div class='personal_bouquet_img_choix_dahlia'></div>
-						<input class ='personal_bouquet_input' type="checkbox" id="myCheckbox11" />
-    					<label class ='personal_bouquet_label' for="myCheckbox11">Dahlias</label>
-					</li>
-					<li class='personal_bouquet_fleur'>
-						<div class='personal_bouquet_img_choix_pivoine'></div>
-						<input class ='personal_bouquet_input' type="checkbox" id="myCheckbox12" />
-    					<label class ='personal_bouquet_label' for="myCheckbox12">Pivoines</label>
-					</li>
-					<li class='personal_bouquet_fleur'>
-						<div class='personal_bouquet_img_choix_cosmos'></div>
-						<input class ='personal_bouquet_input' type="checkbox" id="myCheckbox13" />
-    					<label class ='personal_bouquet_label' for="myCheckbox13">Cosmos</label>
-					</li>
-				</ul>
-				<ul class='flex-choix'>
-					<li class='personal_bouquet_herbes'>
-						<div class='personal_bouquet_img_choix_fougere'></div>
-						<input class ='personal_bouquet_input' type="checkbox" id="myCheckbox14" />
-    					<label class ='personal_bouquet_label' for="myCheckbox14">Fougeres</label>
-					</li>
-					<li class='personal_bouquet_herbes'>
-						<div class='personal_bouquet_img_choix_eucalyptus'></div>
-						<input class ='personal_bouquet_input' type="checkbox" id="myCheckbox15" />
-    					<label class ='personal_bouquet_label' for="myCheckbox15">Eucalyptus</label>
-					</li>
-				</ul>
-			</ul>
-		</form>	
+		<h1 class='h1-bouquetPersonalisé'>
+			Bouquet personnalisé
+		</h1>
+		<form class='bouquet-personnalise-formulaire' action="" method='post'>
+				<h2 class='h2-bouquetPersonalisé'>Forme du bouquet:</h2>
+				<div class='bouquetPersonnalisé-forme'>
+					<div>
+						<div class='bouquet-personnalise-rond'></div>
+						<input class='input-bouquet-personnalise' type="radio" name='forme' value='rond' id='rond'>
+						<label class='bouquet-personnalise-label' for="rond">Rond</label>
+					</div>
+					<div>
+						<div class='bouquet-personnalise-champetre'></div>
+						<input class='input-bouquet-personnalise' type="radio" name='forme' value='champetre' id='champetre'>
+						<label class='bouquet-personnalise-label' for="champetre">Champetre<label>
+					</div>
+				</div>
+				<h2 class='h2-bouquetPersonalisé'>Choix de la couleur:</h2>
+				<div class='bouquetPersonnalise-couleur'>
+					<div>
+						<div class='bouquet-personnalise-rouge'></div>
+						<input class='input-bouquet-personnalise' type="radio" name='couleur' value='rouge' id='rouge'>
+						<label class='bouquet-personnalise-label' for="rouge">Rouge<label>
+					</div>	
+					<div>
+						<div class='bouquet-personnalise-orange'></div>
+						<input class='input-bouquet-personnalise' type="radio" name='couleur' value='orange' id='orange'>
+						<label class='bouquet-personnalise-label' for="orange">Orange<label>
+					</div>	
+					<div>
+						<div class='bouquet-personnalise-pink'></div>
+						<input class='input-bouquet-personnalise' type="radio" name='couleur' value='pink' id='pink'>
+						<label class='bouquet-personnalise-label' for="pink">Rose<label>
+					</div>	
+					<div>
+						<div class='bouquet-personnalise-jaune'></div>
+						<input class='input-bouquet-personnalise' type="radio" name='couleur' value='jaune' id='jaune'>
+						<label class='bouquet-personnalise-label' for="jaune">Jaune<label>
+					</div>	
+					<div>
+						<div class='bouquet-personnalise-blanc'></div>
+						<input class='input-bouquet-personnalise' type="radio" name='couleur' value='blanc' id='blanc'>
+						<label class='bouquet-personnalise-label' for="blanc">Blanc<label>
+					</div>	
+				</div>
+				<h2 class='h2-bouquetPersonalisé'>Fleur principale:</h2>
+				<p><span uk-icon="icon: info"></span> Le nombre de fleurs par sorte est de 5</p>
+				<div class='bouquetPersonnalise-fleurs'>
+					<div>
+						<div class='bouquet-personnalise-rose'></div>
+						<input class='input-bouquet-personnalise' type="radio" name='fleur1' value='rose' id='rose'>
+						<label class='bouquet-personnalise-label' for="rose">Roses<label>
+					</div>
+					<div>
+						<div class='bouquet-personnalise-dahlia'></div>
+						<input class='input-bouquet-personnalise' type="radio" name='fleur1' value='dahlias' id='dahlias'>
+						<label class='bouquet-personnalise-label' for="dahlias">Dahlias<label>
+					</div>
+				</div>
+				<h2 class='h2-bouquetPersonalisé'>Fleur segondaire:</h2>
+				<p><span uk-icon="icon: info"></span> Le nombre de fleurs par sorte est de 5</p>
+				<div class='bouquetPersonnalise-fleurs-segondaire'>
+					<div>
+						<div class='bouquet-personnalise-tulipe'></div>
+						<input class='input-bouquet-personnalise' type="radio" name='fleur2' value='tulipe' id='tulipe'>
+						<label class='bouquet-personnalise-label' for="tulipe">Tulipes<label>
+					</div>
+					<div>
+						<div class='bouquet-personnalise-pivoine'></div>
+						<input class='input-bouquet-personnalise' type="radio" name='fleur2' value='pivoine' id='pivoine'>
+						<label class='bouquet-personnalise-label' for="pivoine">Pivoines<label>
+					</div>
+					<div>
+						<div class='bouquet-personnalise-cosmos'></div>
+						<input class='input-bouquet-personnalise' type="radio" name='fleur2' value='cosmos' id='cosmos'>
+						<label class='bouquet-personnalise-label' for="cosmos">Cosmos<label>
+					</div>
+				</div>
+				<h2 class='h2-bouquetPersonalisé'>Choix des herbes:</h2>
+				<div class='bouquetPersonnalise-herbe'>
+					<div>
+						<div class='bouquet-personnalise-fougere'></div>
+						<input class='input-bouquet-personnalise' type="radio" name='herbe' value='fougere' id='fougere'>
+						<label class='bouquet-personnalise-label' for="fougere">Fougeres<label>
+					</div>
+					<div>
+						<div class='bouquet-personnalise-eucalyptus'></div>
+						<input class='input-bouquet-personnalise' type="radio" name='herbe' value='eucalyptus' id='eucalyptus'>
+						<label class='bouquet-personnalise-label' for="eucalyptus">Eucalyptus<label>
+					</div>
+				</div>
+			<button class='bouquet-personnalise-button' type='submit'>Valider la commande</button>
+		</form>
 	</main>
 {% endblock %}

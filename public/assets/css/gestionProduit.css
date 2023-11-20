@@ -1,0 +1,88 @@
+.main-addProduit {
+    margin: 5rem 10%;
+    text-align: center;
+}
+
+.input-sup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-add {
+    border: 2px solid var(--primary);
+}
+
+.div-input-add {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-add:hover {
+    border: solid 3px rgb(0, 92, 28);
+    transition: .3s;
+}
+
+.text-add {
+    resize: none;
+}
+
+.button-add {
+    margin: 1rem;
+    border: solid 3px var(--primary);
+    color: var(--primary);
+    font-size: 1.4rem;
+}
+
+.button-add:hover {
+    background-color: var(--primary);
+    border: solid 3px white;
+    color: white;
+    box-shadow: 1px 1px 9px 2px grey,
+    -1px -1px 9px 2px rgb(180, 180, 180);
+    text-shadow: 0.5px 0.5px 15px white,
+    -0.5px -0.5px 20px white;
+}
+
+.bouton-add-return {
+    margin: 1rem;
+    border: solid 3px var(--primary);
+    color: var(--primary);
+    font-size: 1rem;
+}
+
+.main-gestion-produit {
+    margin: 5rem 5%;
+    text-align: center;
+}
+
+.thead-gestion-produit th{
+    background-color: var(--primary);
+    color: white;
+}
+
+.boutons-gestion-produit {
+    margin: 1rem;
+    border: solid 3px var(--primary);
+    color: var(--primary);
+    font-size: 1rem; 
+}
+
+.boutons-gestion-produit:hover {
+    background-color: var(--primary);
+    border: solid 3px white;
+    color: white;
+    box-shadow: 1px 1px 9px 2px grey,
+    -1px -1px 9px 2px rgb(180, 180, 180);
+    text-shadow: 0.5px 0.5px 15px white,
+    -0.5px -0.5px 20px white;
+}
+
+.label-gestionProduit {
+    color: var(--primary);
+}
+
+.errors-gestionProduit {
+    color: red;
+}
