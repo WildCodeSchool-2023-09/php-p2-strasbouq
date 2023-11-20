@@ -4,14 +4,17 @@
     <form action="" method='post' class='uk-position-center'>
 
         <div class="uk-margin">
+            <label for="name">Produit:</label>
             <input class="input-restock-edit uk-input uk-form-width-large" placeholder="{{ restocks.name }}" readonly='true' aria-label="Input" name='name' >
         </div>
 
         <div class="uk-margin">
+            <label for="quantity">Quantité actuelle:</label>
             <input class="input-restock-edit uk-input uk-margin-top uk-form-width-large" placeholder="{{ restocks.quantity }}" readonly='true' aria-label="Input" name='quantity'>
         </div>
 
         <div class="uk-margin">
+            <label for="">Ajouter une quantité:</label>
             <input class="input-restock-edit uk-input uk-margin-top uk-form-width-large" aria-label="Input"  name='refill' placeholder='Ajouter'>
         </div>
 

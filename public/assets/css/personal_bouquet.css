@@ -61,6 +61,13 @@
     justify-content: center;
 }
 
+.bouquet-personnalise-label:hover {
+    background-color: rgb(224, 241, 255);
+    box-shadow: 5px 5px 15px var(--primary),
+    -5px -5px 15px var(--primary);
+    transition: 0.3s;
+}
+
 .input-bouquet-personnalise:checked + .bouquet-personnalise-label {
     background-color: var(--primary);
     color: white;
@@ -200,4 +207,10 @@
 .bouquet-personnalise-formulaire {
     display: flex;
     flex-direction: column;
+}
+
+.bouquet-personnalise-button:hover {
+    background-color: white;
+    color: var(--primary);
+    transition: 0.3s;
 }
