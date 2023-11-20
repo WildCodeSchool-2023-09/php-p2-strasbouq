@@ -35,7 +35,7 @@ class GestionProduitController extends AbstractController
                 $gestionManager = new GestionProduitManager();
                 $gestionManager->add($_POST, $filesName);
 
-                //header('Location:/gestionProduit');
+                header('Location:/gestionProduit');
             }
         }
         return $this->twig->render('Admin/addProduit.html.twig', ['errors' => $errors]);
