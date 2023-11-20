@@ -23,3 +23,20 @@
 	display: flex;
 	justify-content: space-between;
 }
+
+.d-grid {
+    grid-template-columns: repeat(3, 180px);
+    grid-template-rows: repeat(3, 290px);
+}
+
+.d-grid img {
+    width: 182px;
+    height: 242px;
+    object-fit: cover;
+}
+
+.d-grid:first-child img {
+    width: 500px;
+    height: 500px !important;
+    object-fit: cover;
+}
