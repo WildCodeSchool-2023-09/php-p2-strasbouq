@@ -5,12 +5,12 @@ namespace App\Controller;
 use App\Controller\AbstractController;
 use App\Model\CategorieManager;
 
-class CatalogueController extends AbstractController
+class CategorieController extends AbstractController
 {
     public function index(): string 
     {
         $categorieManager = new CategorieManager;
-        $produits = $categorieManager->selectAll('position', 'ASC',);
+        $produits = $categorieManager->selectAll('position', 'ASC', '');
         return $this->twig->render('Home/catalogue.html.twig', ['produits' => $produits]);
     }
 

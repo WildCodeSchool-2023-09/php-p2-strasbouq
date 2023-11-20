@@ -1,0 +1,31 @@
+{% extends 'admin.html.twig' %}
+
+{% block title %}
+	Message client
+{% endblock %}
+
+{% block content %}
+	<main class='admin-main-message'>
+        <div>
+        <h2 class='uk-align-center'>Messages client</h2>
+		<table class="uk-table uk-table-divider">
+			<thead class='thead-admin-message'>
+				<tr>
+					<th class='uk-width-medium'>Name</th>
+					<th class=>Text</th>
+                    <th></th>
+				</tr>
+			</thead>
+			{% for message in messages %}
+				<tbody>
+					<tr>
+						<td>{{ message.name }}</td>
+						<td>{{ message.text }}</td>
+                        <td><a href="message/delete?id={{ message.id }}"><button class="uk-button uk-button-default" type="button">Suprimer</button></a></td>
+					</tr>
+				</tbody>
+			{% endfor %}
+		</table>
+        </div>
+	</main>
+{% endblock %}

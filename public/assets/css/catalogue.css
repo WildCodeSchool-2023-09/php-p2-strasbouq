@@ -71,6 +71,12 @@
     right: 0;
 }
 
+.catalogue-a:hover {
+    text-decoration: underline white;
+    color: white;
+
+}
+
 .produit:hover .middle {
     opacity: 1;
 }
