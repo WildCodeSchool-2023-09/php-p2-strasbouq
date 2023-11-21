@@ -1,0 +1,115 @@
+.navcatalogue {
+    width: 100%;
+    height: 70px;
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(19,32,40,1) 0%, rgba(85,87,89,1) 75%, rgba(203,207,209,1) 100%);
+    color: white;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    display: flex;
+    padding: 0;
+    padding-left: 5rem;
+    font-size: 45px;
+    padding-inline-start: 0px;
+    border-radius: 20px;
+}
+
+.catalogue-header {
+    padding: 50px;
+    background-color: var(--primary);
+}
+
+.catmain {
+    margin: 0 10%;
+}
+
+.catalogueh1 {
+    text-align: center;
+    font-family: var(--font-family-primary);
+    padding: 0.9%;
+    color: var(--primary);
+    font-size: 4rem;
+    margin: 0;
+}
+
+.catalogue-a {
+    color: white;
+    text-decoration: none;
+    font-family: var(--font-family-primary);
+    font-size: 3rem;
+}
+
+.parent {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(5, 180px);
+    grid-template-rows: repeat(5, 290px);
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+    width: 70%;
+    margin: auto;
+}
+    
+.parent img {
+    width: 180px;
+    height: 290px;
+    border: 5px solid #132028;
+}
+
+.produit {
+    position: relative;
+}
+
+.middle {
+    transition: 0.8s ease;
+    position: absolute;
+    text-align: center;
+    opacity: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.catalogue-a:hover {
+    text-decoration: underline white;
+    color: white;
+
+}
+
+.produit:hover .middle {
+    opacity: 1;
+}
+
+.priceCatalogue {
+    background-color: #13202850;
+    color: white;
+    font-style: 17px;
+    padding: 15px 16px;
+    width: 154px;
+}
+
+    /*Media Query*/
+
+@media (max-width: 1080px) {
+
+.parent {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+}
+        
+}
+
+@media (max-width: 650px) {
+
+.navcatalogue {
+    font-size: 30px;
+}
+
+.parent {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: repeat(10, 1fr);
+}
+
+}

@@ -55,6 +55,7 @@ class GestionProduitController extends AbstractController
             if (empty($errors)) {
                 $gestionManager->update($_POST, $filesName);
             }
+            header('Location:/gestionProduit');
         }
         $produits = $gestionManager->selectOneById($id);
         return $this->twig->render('Admin/editProduit.html.twig', ['produits' => $produits, 'errors' => $errors]);
