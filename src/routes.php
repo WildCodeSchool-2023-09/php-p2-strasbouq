@@ -21,6 +21,11 @@ return [
     'stock' => ['StockController', 'index',],
     'Admin/stock/edit' => ['StockController', 'edit', ['id']],
     'Admin/stock/restock' => ['StockController', 'increment', ['id']],
+    'catalogue' => ['CategorieController', 'index',],
+    'catalogue/vase' => ['CategorieController', 'sortVase',],
+    'catalogue/bouquet' => ['CategorieController', 'sortBouquet',],
+    'catalogue/fleur' => ['CategorieController', 'sortFleur',],
+    'catalogue/plante' => ['CategorieController', 'sortPlante',],
     'categorie/show' => ['CategorieController', 'show', ['id']],
     'message' => ['AdminMessageController', 'index'],
     'message/delete' => ['AdminMessageController', 'delete', ['id']],
@@ -29,4 +34,5 @@ return [
     'gestionProduit/delete' => ['GestionProduitController', 'delete', ['id']],
     'gestionProduit/add' => ['GestionProduitController', 'add',],
     'logout' => ['LoginController', 'logout',],
+    'commandes' => ['CommandesController', 'index',],
 ];

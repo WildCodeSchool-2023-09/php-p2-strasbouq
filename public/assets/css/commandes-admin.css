@@ -1,0 +1,11 @@
+.main-commandes {
+    margin: 2rem 10%;
+}
+
+.carte-commande {
+    border: solid 7px #BF808C;
+    font-size: 1.5rem;
+    border-radius: 40px 40px 40px 0px;
+    box-shadow: 15px 15px var(--primary);
+    margin: 2rem;
+}
