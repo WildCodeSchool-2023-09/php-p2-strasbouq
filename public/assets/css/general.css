@@ -31,6 +31,10 @@ li {
     list-style: none;
 }
 
+a .catLi {
+    text-decoration: none;
+}
+
 .menuDroite ul li:last-child {
     margin-right: 1rem;
 }

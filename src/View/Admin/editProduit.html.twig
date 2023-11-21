@@ -1,0 +1,89 @@
+{% extends 'admin.html.twig' %}
+
+{% block title %}
+	Ajout produits
+{% endblock %}
+
+{% block content %}
+	<main class='main-addProduit'>
+		<div class=''>
+			<h2>Ajouter un article</h2>
+			<form class='form-addProduit' action="" method='post' enctype='multipart/form-data'>
+				<div class='input-sup'>
+					<div class="div-input-add uk-width-1-5@s">
+						<label for="name" class="label-gestionProduit">Nom du produit:</label>
+						{% if errors.name is defined %}
+							<div class='errors-gestionProduit'>{{ errors.name }}</div>
+						{% endif %}
+						<input class="input-add uk-input" type="text" name='name' value='{{ produits.name }}'>
+						<input class="input-add uk-input" type="hidden" name='id' value='{{ produits.id }}'>
+					</div>
+					<div class="div-input-add uk-width-1-5@s">
+						<label for="prive" class="label-gestionProduit" >Prix:</label>
+						{% if errors.price is defined %}
+							<div class='errors-gestionProduit'>{{ errors.price }}</div>
+						{% endif %}
+						<input class="input-add uk-input" type="text" name='price' value='{{ produits.price }}'>
+					</div>
+					<div class="div-input-add uk-width-1-5@s">
+						<label for="quantity" class="label-gestionProduit">Quantité:</label>
+						{% if errors.quantity is defined %}
+							<div class='errors-gestionProduit'>{{ errors.quantity }}</div>
+						{% endif %}
+						<input class="input-add uk-input" type="text" name='quantity' value='{{ produits.quantity }}'>
+					</div>
+				</div>
+				<div class='input-sup'>
+					<div class="div-input-add">
+						<label for="categorie" class="label-gestionProduit">Catégorie:</label>
+						<select class="input-add uk-select uk-width-1-1@s select-add" aria-label="Select" name='categorie'>
+							<option value="">Selectionnez...</option>
+							<option value="fleur">Fleurs</option>
+							<option value="bouquet">Bouquets</option>
+							<option value="vase">Vases</option>
+							<option value="coffret">Coffrets</option>
+							<option value="herbe">Herbes</option>
+						</select>
+					</div>
+					<div class="div-input-add uk-width-1-2@s">
+						<label for="description" class="label-gestionProduit">Description:</label>
+						{% if errors.description is defined %}
+							<div class='errors-gestionProduit'>{{ errors.description }}</div>
+						{% endif %}
+						<textarea class="input-add uk-textarea text-add" name='description'>{{ produits.description }}</textarea>
+					</div>
+					<div class="div-input-add">
+						<label for="position" class="label-gestionProduit">Position:</label>
+						<select class="input-add uk-select uk-width-1-1@s select-add" aria-label="Select" name='position'>
+							<option value="">...</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+							<option value="6">6</option>
+							<option value="7">7</option>
+							<option value="8">8</option>
+							<option value="9">9</option>
+							<option value="10">10</option>
+						</select>
+					</div>
+				</div>
+				<div class='input-sup'>
+					<div uk-form-custom="target: true" class="div-input-add">
+						<label for="image" class="label-gestionProduit">Image:</label>
+						<input type="file" aria-label="Custom controls" name='image' id='image' accecp='image/jpg, image/jpeg, image/png'>
+						<input class="input-add uk-input uk-form-width-large" placeholder='Selectionnez le fichier' name='image' id='image' accecp='image/jpg, image/jpeg, image/png'>
+					</div>
+				</div>
+				<div>
+					<button class='button-add uk-button uk-button-default uk-form-width-medium'>Valider</button>
+				</div>
+			</form>
+			<div>
+				<a href="/gestionProduit"><button class='bouton-add-return uk-button uk-button-default uk-form-width-medium'> Page précédente</button></a>
+			</div>
+		</div>
+		<div></div>
+	</main>
+{% endblock %}

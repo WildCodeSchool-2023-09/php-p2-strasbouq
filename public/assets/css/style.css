@@ -12,8 +12,12 @@
 @import url('_presentation-index.css');
 @import url('product-page.css');
 @import url('personal_bouquet.css');
-
 @import url('dashboard.css');
 @import url('admin-navbar.css');
 @import url('restock.css');
+@import url('adminMessage.css');
+@import url('catalogue.css');
 @import url('page-erreur.css');
+@import url('adminMessage.css');
+@import url('gestionProduit.css');
+
