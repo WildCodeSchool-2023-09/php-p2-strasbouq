@@ -9,12 +9,13 @@ class CategorieManager extends AbstractManager
 {
     public const TABLE = 'article';
 
-    public function selectByCategorie(string $orderBy = '', string $direction = 'ASC', string $condition = ''): array
+    public function selectByCategorie(string $categorie): array
     {
-        $query = 'SELECT * FROM ' . self::TABLE ;
-        if ($orderBy) {
-            $query .= ' ORDER BY ' . $orderBy . ' ' . $direction . ' WHERE categorie= ' . $condition;
-        }
-        return $this->pdo->prepare($query)->fetchAll();
+        $query = 'SELECT * FROM ' . self::TABLE . ' WHERE categorie=:categorie';
+        $statement = $this->pdo->prepare($query);
+        $statement->bindValue('categorie', $categorie, PDO::PARAM_STR);
+
+        $statement->execute();
+        return $statement->fetchAll();
     }
 }

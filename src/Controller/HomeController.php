@@ -11,4 +11,9 @@ class HomeController extends AbstractController
     {
         return $this->twig->render('Home/index.html.twig');
     }
+
+    public function pageError()
+    {
+        return $this->twig->render('Home/page-erreur.html.twig');
+    }
 }

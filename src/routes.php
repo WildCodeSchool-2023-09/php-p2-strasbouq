@@ -25,8 +25,8 @@ return [
     'catalogue/vase' => ['CategorieController', 'sortVase',],
     'catalogue/bouquet' => ['CategorieController', 'sortBouquet',],
     'catalogue/fleur' => ['CategorieController', 'sortFleur',],
-    'catalogue/plante' => ['CategorieController', 'sortPlante',],
-    'categorie/show' => ['CategorieController', 'show', ['id']],
+    'catalogue/coffret' => ['CategorieController', 'sortcoffret',],
+    'produit/show' => ['CategorieController', 'show', ['id']],
     'message' => ['AdminMessageController', 'index'],
     'message/delete' => ['AdminMessageController', 'delete', ['id']],
     'gestionProduit' => ['GestionProduitController', 'index',],
@@ -35,4 +35,5 @@ return [
     'gestionProduit/add' => ['GestionProduitController', 'add',],
     'logout' => ['LoginController', 'logout',],
     'commandes' => ['CommandesController', 'index',],
+    'error' => ['HomeController', 'pageError',],
 ];
