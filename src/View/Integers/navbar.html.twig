@@ -12,7 +12,7 @@
 			</a>
 		</li>
 		<li>
-			<a href="#" class='nav-a'>Catégories
+			<a href="catalogue" class='nav-a'>Catégories
 			</a>
 		</li>
 
@@ -22,19 +22,19 @@
 		{% if session.isAdmin == true %}
 
 			<li>
-				<a href="dashboard" class='uk-margin-left uk-margin-right' uk-icon="icon: settings; ratio: 3"></a>
+				<a href="/dashboard" class='uk-margin-left uk-margin-right' uk-icon="icon: settings; ratio: 10"></a>
 			</li>
 		{% endif %}
 		{% if session.isLoggin %}
 			<li>
-				<a href="logout" uk-icon="icon: sign-out; ratio: 3"></a>
+				<a href="/logout" uk-icon="icon: sign-out; ratio: 5"></a>
 			</li>
 			<li>
 				<a href="#" class='nav-a'><img src="/assets/images/panier.png"></a>
 			</li>
 		{% else %}
 			<li>
-				<a href="login" class='nav-a'><img src="/assets/images/account.png"></a>
+				<a href="/login" class='nav-a'><img src="/assets/images/account.png"></a>
 			</li>
 		{% endif %}
 	</div>
