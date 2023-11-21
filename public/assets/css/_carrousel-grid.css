@@ -2,6 +2,23 @@
 	border:7px solid  var(--primary);
 }
 
+.d-grid {
+	grid-template-columns: repeat(3, 180px);
+	grid-template-rows: repeat(3, 290px);
+}
+
+.d-grid img {
+	width: 182px;
+	height: 242px;
+	object-fit: cover;
+}
+
+.d-grid:first-child img {
+	width: 500px;
+	height: 500px; !important
+	object-fit: cover;
+}
+
 .uk-text-align:hover {
 	font-family: var(--font-family-primary);
 	background-color: rgba(19,32,40,.5);
@@ -24,6 +41,9 @@
 	justify-content: space-between;
 }
 
+
+.uk-flex-wrap-between {
+	align-content: center; 
 .d-grid {
     grid-template-columns: repeat(3, 180px);
     grid-template-rows: repeat(3, 290px);
