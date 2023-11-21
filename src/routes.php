@@ -34,4 +34,5 @@ return [
     'gestionProduit/delete' => ['GestionProduitController', 'delete', ['id']],
     'gestionProduit/add' => ['GestionProduitController', 'add',],
     'logout' => ['LoginController', 'logout',],
+    'commandes' => ['CommandesController', 'index',],
 ];
