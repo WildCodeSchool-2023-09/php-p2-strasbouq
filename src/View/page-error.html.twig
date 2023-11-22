@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+		<link rel="stylesheet" href="/assets/css/style.css"> {% block stylesheet %}{% endblock %}
+		</head>
+		{% block content %}
+			<body class='error-body'>
+
+				<div class='container-error'>
+					<h2 class='h2-erreur'>ERREUR 404</h2>
+					<p class='error-p'>Oups vous vous etes égaré(e), appuyez sur le bouton pour revenir sur les rails</p>
+					<a href="/"><button class='bouton-error'>Se remetre sur les rails</button></a>
+				</div>
+			</body>
+		{% endblock %}
+	</html>
