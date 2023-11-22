@@ -1,45 +1,35 @@
-.container-page-404 {
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
+.error-body {
+    background: url(../images/page404.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
 }
 
-.error404 {
-    font-size: 10rem;
-    color: #bf808c;
-    font-family: var(--font-family-primary);
+.h2-erreur {
+    font-size: 5rem;
+    color: white;
 }
 
-.message404 {
+.error-p {
+    color: white;
+    font-size: 1.5rem;
+    margin-top: 5rem;
+}
+
+.bouton-error {
+    padding: 2rem;
+    background-color: var(--primary);
     font-size: 2rem;
-    color: #132028;
+    color: white;
+    border-radius: 20px;
+    margin-top: 2rem;
 }
 
-.button404 {
-    width: 100px;
-    height: 50px;
-    border-radius: 1rem;
-
-
-}
-
-.link404 {
-    font-size: 1rem;
-    color: #201659f9;
-    text-decoration: none;
-}
-
-@media screen and (max-width: 600px) {
-    .error404 {
-        font-size: 8rem;
-    }
-
-    .message404 {
-        font-size: 1.5rem;
-    }
-
-    .link404 {
-        font-size: 1rem;
-    }
-
+.container-error {
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
 }
