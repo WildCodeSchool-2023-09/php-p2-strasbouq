@@ -1,0 +1,35 @@
+{% extends "layout.html.twig" %}
+
+{% block title %}
+	{{ parent() }}
+	- Boutique
+{% endblock %}
+
+{% block content %}
+
+<header class="catalogue-header"></header>
+
+<main class="catmain">
+<h1 class="catalogueh1">Catalogue</h1>
+    <div class="navdivcat">
+    <ul class="navcatalogue">
+        <a href="/catalogue/fleur" class="catalogue-a"><li>Fleurs</li></a>
+        <a href="/catalogue/bouquet" class="catalogue-a"><li>Bouquets</li></a>
+        <a href="/catalogue/vase" class="catalogue-a"><li>Vases</li></a>
+        <a href="#" class="catalogue-a"><li>Coffrets</li></a>
+        <a href="/catalogue" class="catalogue-a"><li>Voir tout</li></a>
+    </ul>
+    </div>
+
+    <div class="parent">
+        {% for produit in produits %}
+        <a href="/produit/show?id={{ produit.id }}"> <div class="produit{{ produit.id }}"><img src="/upload/{{ produit.image }}" alt="{{ produit.name }}"></img> 
+            <div class="middle">
+                <div class="priceCatalogue">{{ produit.price }}€</div>
+            </div>
+        </div></a>
+        {% endfor %}
+    </div>
+</main>
+{% endblock %}
+

@@ -10,39 +10,42 @@ class CategorieController extends AbstractController
     public function index(): string
     {
         $categorieManager = new CategorieManager();
-        $produits = $categorieManager->selectAll('ASC', '');
+        $produits = $categorieManager->selectAll('', 'ASC');
         return $this->twig->render('Home/catalogue.html.twig', ['produits' => $produits]);
     }
 
     public function sortVase(): string
     {
         $categorieManager = new CategorieManager();
-        $produits = $categorieManager->selectByCategorie('position', 'ACS', 'vase');
+        $produits = $categorieManager->selectByCategorie('vase');
         return $this->twig->render('Home/catalogueVase.html.twig', ['produits' => $produits]);
     }
 
     public function sortBouquet(): string
     {
         $categorieManager = new CategorieManager();
-        $produits = $categorieManager->selectByCategorie('position', 'ACS', 'bouquet');
+        $produits = $categorieManager->selectByCategorie('bouquet');
         return $this->twig->render('Home/catalogueBouquet.html.twig', ['produits' => $produits]);
     }
 
     public function sortFleur(): string
     {
         $categorieManager = new CategorieManager();
-        $produits = $categorieManager->selectByCategorie('position', 'ACS', 'fleur');
+        $produits = $categorieManager->selectByCategorie('fleur');
         return $this->twig->render('Home/catalogueFleur.html.twig', ['produits' => $produits]);
     }
 
-    public function sortPlante(): string
+    public function sortCoffret(): string
     {
         $categorieManager = new CategorieManager();
-        $produits = $categorieManager->selectByCategorie('position', 'ACS', 'plante');
-        return $this->twig->render('Home/cataloguePlante.html.twig', ['produits' => $produits]);
+        $produits = $categorieManager->selectByCategorie('coffret');
+        return $this->twig->render('Home/catalogueCoffret.html.twig', ['produits' => $produits]);
     }
-    public function show()
+
+    public function show($id)
     {
-        return $this->twig->render('Home\product-page.html.twig');
+        $categorieManager = new CategorieManager();
+        $produits = $categorieManager->selectOneById($id);
+        return $this->twig->render('Home\product-page.html.twig', ['produits' => $produits]);
     }
 }
